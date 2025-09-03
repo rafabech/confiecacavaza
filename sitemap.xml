@@ -43,4 +43,11 @@
     <priority>0.9</priority>
   </url>
 
+  <!-- Página de Neves Paulista -->
+  <url>
+    <loc>https://www.confiecacavazamento.com.br/cidades/neves-paulista/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
 </urlset>
