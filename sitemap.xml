@@ -4,64 +4,163 @@
   <!-- Página inicial -->
   <url>
     <loc>https://www.confiecacavazamento.com.br/</loc>
+    <lastmod>2025-09-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
 
-  <!-- Página de Monte Aprazível -->
+  <!-- Cidades principais -->
   <url>
     <loc>https://www.confiecacavazamento.com.br/cidades/monte-aprazivel/</loc>
-    <changefreq>weekly</changefreq>
+    <lastmod>2025-09-04</lastmod>
+    <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
-
-  <!-- Página de Tanabi -->
   <url>
     <loc>https://www.confiecacavazamento.com.br/cidades/tanabi/</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
+    <lastmod>2025-09-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
   </url>
-
-  <!-- Página de São José do Rio Preto -->
   <url>
     <loc>https://www.confiecacavazamento.com.br/cidades/sao-jose-do-rio-preto/</loc>
-    <changefreq>weekly</changefreq>
+    <lastmod>2025-09-04</lastmod>
+    <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
-
-  <!-- Página de Mirassol -->
   <url>
     <loc>https://www.confiecacavazamento.com.br/cidades/mirassol/</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
+    <lastmod>2025-09-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
   </url>
-
-  <!-- Página de Bady Bassitt -->
   <url>
     <loc>https://www.confiecacavazamento.com.br/cidades/bady-bassitt/</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
+    <lastmod>2025-09-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
   </url>
-
-  <!-- Página de Neves Paulista -->
   <url>
     <loc>https://www.confiecacavazamento.com.br/cidades/neves-paulista/</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
+    <lastmod>2025-09-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
   </url>
-
-  <!-- Página de José Bonifácio -->
   <url>
     <loc>https://www.confiecacavazamento.com.br/cidades/jose-bonifacio/</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
+    <lastmod>2025-09-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
   </url>
-
-  <!-- Página de Mirassolândia -->
   <url>
     <loc>https://www.confiecacavazamento.com.br/cidades/mirassolandia/</loc>
-    <changefreq>weekly</changefreq>
+    <lastmod>2025-09-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.confiecacavazamento.com.br/cidades/nhandeara/</loc>
+    <lastmod>2025-09-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Demais cidades -->
+  <url>
+    <loc>https://www.confiecacavazamento.com.br/cidades/cedral/</loc>
+    <lastmod>2025-09-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.confiecacavazamento.com.br/cidades/onda-verde/</loc>
+    <lastmod>2025-09-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.confiecacavazamento.com.br/cidades/uchoa/</loc>
+    <lastmod>2025-09-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.confiecacavazamento.com.br/cidades/catanduva/</loc>
+    <lastmod>2025-09-04</lastmod>
+    <changefreq>monthly</changefreq>
     <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.confiecacavazamento.com.br/cidades/ibira/</loc>
+    <lastmod>2025-09-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.confiecacavazamento.com.br/cidades/potirendaba/</loc>
+    <lastmod>2025-09-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.confiecacavazamento.com.br/cidades/jaci/</loc>
+    <lastmod>2025-09-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.confiecacavazamento.com.br/cidades/uniao-paulista/</loc>
+    <lastmod>2025-09-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.confiecacavazamento.com.br/cidades/floreal/</loc>
+    <lastmod>2025-09-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.confiecacavazamento.com.br/cidades/general-salgado/</loc>
+    <lastmod>2025-09-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.confiecacavazamento.com.br/cidades/magda/</loc>
+    <lastmod>2025-09-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.confiecacavazamento.com.br/cidades/votuporanga/</loc>
+    <lastmod>2025-09-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.confiecacavazamento.com.br/cidades/nipoa/</loc>
+    <lastmod>2025-09-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.confiecacavazamento.com.br/cidades/planalto/</loc>
+    <lastmod>2025-09-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.confiecacavazamento.com.br/cidades/zacarias/</loc>
+    <lastmod>2025-09-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.confiecacavazamento.com.br/cidades/buritama/</loc>
+    <lastmod>2025-09-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
   </url>
 
 </urlset>
