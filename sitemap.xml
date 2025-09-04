@@ -163,4 +163,36 @@
     <priority>0.7</priority>
   </url>
 
+  <!-- Novos endereços -->
+  <url>
+    <loc>https://www.confiecacavazamento.com.br/cidades/rio-preto/</loc>
+    <lastmod>2025-09-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.confiecacavazamento.com.br/cidades/rio-pretolimp/</loc>
+    <lastmod>2025-09-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.confiecacavazamento.com.br/cidades/mirassolcaca/</loc>
+    <lastmod>2025-09-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.confiecacavazamento.com.br/cidades/mirassollimp/</loc>
+    <lastmod>2025-09-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.confiecacavazamento.com.br/cidades/rptudo/</loc>
+    <lastmod>2025-09-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+
 </urlset>
