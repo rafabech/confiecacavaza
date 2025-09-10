@@ -4,48 +4,24 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
 
-  <title>Rio Preto: Caça Vazamentos com Geofone + Higienização de Caixa d’Água | Confie (17)98111-3437</title>
+  <title>Rio Preto: Caça Vazamentos com Geofone + Higienização de Caixa d’Água | Confie (17) 98111-3437</title>
   <meta name="description" content="Confie em Rio Preto: localização de vazamentos com geofone sem quebrar, teste de pressão, relatório técnico e limpeza de caixa d’água com desinfecção. Atendimento rápido em todos os bairros e condomínios. WhatsApp (17) 98111-3437.">
-  <meta name="keywords" content="caça vazamentos Rio Preto, geofone Rio Preto, vazamento oculto Rio Preto, limpeza de caixa d’água Rio Preto, higienização reservatórios Rio Preto, laudo técnico Rio Preto, conta de água alta Rio Preto, Confie caça vazamentos rio preto">
 
-  <!-- Canonical (confira se seu domínio é com ou sem 's') -->
-  <link rel="canonical" href="https://www.confiecacavazamento.com.br/cidades/rio-preto/">
-
-  <!-- Open Graph -->
-  <meta property="og:type" content="website">
-  <meta property="og:title" content="Confie em Rio Preto | Geofone sem quebrar e limpeza de caixa d’água">
-  <meta property="og:description" content="Detecção precisa de vazamentos e higienização de caixas d’água em São José do Rio Preto. Ligue já:(17)98111-3437.">
-  <meta property="og:image" content="https://i.ibb.co/Q30LDtQT/capa-pagina.png">
-  <meta property="og:url" content="https://www.confiecacavazamento.com.br/cidades/rio-preto/">
-  <meta property="og:site_name" content="Confie Caça Vazamentos">
-  <meta name="twitter:card" content="summary_large_image">
-
-  <!-- Favicon / PWA -->
   <link rel="icon" href="https://i.ibb.co/Q30LDtQT/capa-pagina.png" type="image/png">
-  <meta name="theme-color" content="#0b132b">
-  <meta name="application-name" content="Confie Caça Vazamentos">
-  <meta name="apple-mobile-web-app-capable" content="yes">
-
-  <!-- Fonte -->
   <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;600;700&display=swap" rel="stylesheet">
 
   <style>
     :root{
-      --bg:#0b132b;         /* fundo escuro elegante */
-      --card:#111a3a;       /* cartões */
-      --brand:#25D366;      /* whats/realce */
-      --ink:#e9eefc;        /* texto claro */
-      --muted:#9fb3ff;      /* texto secundário */
-      --accent:#5bc0be;     /* detalhes */
+      --bg:#0b132b;
+      --card:#111a3a;
+      --brand:#25D366;
+      --ink:#e9eefc;
+      --muted:#9fb3ff;
+      --accent:#5bc0be;
       --shadow:0 10px 30px rgba(0,0,0,.35)
     }
     *{box-sizing:border-box}
-    body{
-      margin:0;
-      background:linear-gradient(160deg,#0b132b 0%,#1c2541 100%);
-      color:var(--ink);
-      font-family:'Rubik',Arial,sans-serif;
-    }
+    body{margin:0;background:linear-gradient(160deg,#0b132b 0%,#1c2541 100%);color:var(--ink);font-family:'Rubik',Arial,sans-serif}
     a{color:inherit;text-decoration:none}
     img{max-width:100%;display:block}
     .container{max-width:1180px;margin:auto;padding:24px}
@@ -54,21 +30,20 @@
     .topbar{
       display:flex;align-items:center;justify-content:space-between;gap:16px;
       padding:14px 24px;background:#0d1740;border-bottom:1px solid rgba(255,255,255,.06);
-      position:sticky;top:0;z-index:9
+      position:sticky;top:0;z-index:9;flex-wrap:nowrap
     }
-    .brand{display:flex;align-items:center;gap:12px}
-    .brand img{width:44px;height:44px;border-radius:10px;box-shadow:var(--shadow)}
-    .brand span{font-weight:700;letter-spacing:.3px}
+    .brand{display:flex;align-items:center;gap:12px;flex-shrink:0}
+    .brand img{width:60px;height:60px;border-radius:12px;box-shadow:var(--shadow)}
+    .brand span{font-weight:700;letter-spacing:.3px;font-size:16px}
+    .cta-mini{flex-shrink:0}
     .cta-mini a{
       display:inline-flex;align-items:center;gap:10px;background:var(--brand);color:#053b22;
-      font-weight:800;padding:10px 16px;border-radius:10px
+      font-weight:800;padding:10px 16px;border-radius:10px;white-space:nowrap
     }
     .cta-mini a svg{width:18px;height:18px}
 
     /* hero */
-    .hero{
-      display:grid;grid-template-columns:1.1fr .9fr;gap:28px;align-items:center;margin-top:22px
-    }
+    .hero{display:grid;grid-template-columns:1.1fr .9fr;gap:28px;align-items:center;margin-top:22px}
     .hero-card{background:var(--card);border-radius:16px;padding:28px;box-shadow:var(--shadow)}
     .hero h1{margin:0 0 10px;font-size:34px;line-height:1.15}
     .hero p{color:var(--muted);margin:0 0 14px}
@@ -91,17 +66,9 @@
     .grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
     .card{background:var(--card);border-radius:14px;padding:18px;box-shadow:var(--shadow)}
     .card p{color:#cdd9ff;margin:8px 0 0}
-
-    /* steps numeradas */
-    .steps{counter-reset:stepp}
     .step{position:relative;padding-left:56px;margin:14px 0}
-    .step:before{
-      counter-increment:stepp;content:counter(stepp);
-      position:absolute;left:0;top:0;width:38px;height:38px;border-radius:12px;
-      background:#0f1a46;border:1px solid rgba(255,255,255,.1);display:flex;align-items:center;justify-content:center;font-weight:800;color:#a9c5ff
-    }
+    .step:before{counter-increment:stepp;content:counter(stepp);position:absolute;left:0;top:0;width:38px;height:38px;border-radius:12px;background:#0f1a46;border:1px solid rgba(255,255,255,.1);display:flex;align-items:center;justify-content:center;font-weight:800;color:#a9c5ff}
 
-    /* listas em colunas */
     ul{padding-left:18px}
     .cols{columns:2;column-gap:22px}
     .cols li{break-inside:avoid;margin:6px 0}
@@ -110,7 +77,8 @@
     /* footer */
     footer{margin-top:34px;background:#0d1740;border-top:1px solid rgba(255,255,255,.06)}
     .footer-inner{max-width:1180px;margin:auto;padding:22px;text-align:center;color:#bfcaf7}
-    .social a img{width:28px;height:28px;margin:0 6px;vertical-align:middle}
+    .social{display:flex;justify-content:center;gap:14px;margin-top:12px}
+    .social a img{width:28px;height:28px;display:block}
 
     /* sticky bottom bar */
     .sticky-bar{
@@ -121,9 +89,8 @@
     }
     .sticky-bar .btn{flex:1 1 180px}
 
-    /* MOBILE-FIRST */
+    /* responsivo */
     @media (max-width:980px){
-      /* garante que a sticky não cubra o conteúdo */
       body{padding-bottom:96px}
       .container{padding:18px}
       .hero{grid-template-columns:1fr}
@@ -132,49 +99,10 @@
       .cols{columns:1}
       .hero-actions .btn{width:100%}
     }
-    /* Tablet */
     @media (min-width:600px) and (max-width:980px){
       .grid-3{grid-template-columns:repeat(2,1fr)}
     }
   </style>
-
-  <!-- Structured Data: LocalBusiness + FAQPage -->
-  <script type="application/ld+json">
-  {
-    "@context":"https://schema.org",
-    "@type":"LocalBusiness",
-    "name":"Confie Caça Vazamentos",
-    "url":"https://www.confiecacavazamento.com.br/",
-    "logo":"https://i.ibb.co/Q30LDtQT/capa-pagina.png",
-    "image":"https://i.ibb.co/Q30LDtQT/capa-pagina.png",
-    "telephone":"+55 17 98111-3437",
-    "address":{"@type":"PostalAddress","addressLocality":"São José do Rio Preto","addressRegion":"SP","addressCountry":"BR"},
-    "areaServed":"São José do Rio Preto - SP",
-    "openingHours":"Mo-Su 00:00-23:59",
-    "sameAs":["https://www.instagram.com/confiecacavazamentos/","https://web.facebook.com/confiecacavazamentos/"],
-    "contactPoint": {
-      "@type": "ContactPoint",
-      "telephone": "+55-17-98111-3437",
-      "contactType": "customer service",
-      "areaServed": "BR",
-      "availableLanguage": ["Portuguese"]
-    }
-  }
-  </script>
-  <script type="application/ld+json">
-  {
-    "@context":"https://schema.org",
-    "@type":"FAQPage",
-    "mainEntity":[
-      {"@type":"Question","name":"O geofone encontra vazamentos sem quebrar?",
-       "acceptedAnswer":{"@type":"Answer","text":"Sim. O geofone capta o ruído gerado pela água sob pressão dentro da tubulação. Com análise de frequência e teste de pressão localizamos o ponto exato para intervir apenas onde é necessário."}},
-      {"@type":"Question","name":"Vocês emitem laudo técnico?",
-       "acceptedAnswer":{"@type":"Answer","text":"Emitimos laudo com registros e orientações para condomínios, comércios e residências. O documento descreve os testes realizados e as evidências encontradas."}},
-      {"@type":"Question","name":"De quanto em quanto tempo devo limpar a caixa d’água?",
-       "acceptedAnswer":{"@type":"Answer","text":"A recomendação é a cada 6 meses. O serviço inclui esvaziamento, escovação, desinfecção e enxágue, reduzindo riscos de contaminação por bactérias como E. coli."}}
-    ]
-  }
-  </script>
 </head>
 <body>
 
@@ -185,9 +113,9 @@
       <span>Confie Caça Vazamentos • Rio Preto</span>
     </div>
     <div class="cta-mini">
-      <a href="tel:+5517981113437" aria-label="Ligar (17)98111-3437">
-        <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M22 16.92v2a2 2 0 0 1-2.18 2 19.86 19.86 0 0 1-8.63-3.07A19.5 19.5 0 0 1 3.2 10.8 19.86 19.86 0 0 1 .13 2.17 2 2 0 0 1 2.11 0h2a2 2 0 0 1 2 1.72c.12.9.32 1.77.6 2.6a2 2 0 0 1-.45 2.11L5.1 7.59a16 16 0 0 0 7.31 7.31l1.16-1.16a2 2 0 0 1 2.11-.45c.83.28 1.7.48 2.6.6A2 2 0 0 1 22 16.92z" fill="#053b22"/></svg>
-        (17)98111-3437
+      <a href="tel:+5517981113437" aria-label="Ligar para Confie (17) 98111-3437">
+        <svg viewBox="0 0 24 24" fill="none"><path d="M22 16.92v2a2 2 0 0 1-2.18 2 19.86 19.86 0 0 1-8.63-3.07A19.5 19.5 0 0 1 3.2 10.8 19.86 19.86 0 0 1 .13 2.17 2 2 0 0 1 2.11 0h2a2 2 0 0 1 2 1.72c.12.9.32 1.77.6 2.6a2 2 0 0 1-.45 2.11L5.1 7.59a16 16 0 0 0 7.31 7.31l1.16-1.16a2 2 0 0 1 2.11-.45c.83.28 1.7.48 2.6.6A2 2 0 0 1 22 16.92z" fill="#053b22"/></svg>
+        (17) 98111-3437
       </a>
     </div>
   </div>
@@ -205,12 +133,12 @@
           <span class="chip">Higienização 6 em 6 meses</span>
         </div>
         <div class="hero-actions">
-          <a class="btn btn-primary" href="https://wa.me/5517981113437?text=Quero%20atendimento%20em%20Rio%20Preto" target="_blank" rel="noopener nofollow">💬 Falar no WhatsApp</a>
-          <a class="btn btn-ghost" href="tel:+5517981113437">📞 Ligar:(17)98111-3437</a>
+          <a class="btn btn-primary" href="https://wa.me/5517981113437?text=Quero%20atendimento%20em%20Rio%20Preto" target="_blank" rel="nofollow">💬 Falar no WhatsApp</a>
+          <a class="btn btn-ghost" href="tel:+5517981113437">📞 Ligar agora: (17) 98111-3437</a>
         </div>
         <p class="muted" style="margin-top:10px">Atendemos todos os bairros e condomínios (Damha, Alphaville, Quinta do Golfe, Setlife, Gaivota e muitos outros).</p>
       </div>
-      <div class="hero-media" aria-hidden="true">
+      <div class="hero-media">
         <img src="https://i.ibb.co/Q30LDtQT/capa-pagina.png" alt="Confie em Rio Preto - capa">
       </div>
     </section>
@@ -237,13 +165,11 @@
     <!-- COMO DETECTAMOS -->
     <section class="section card">
       <h2>Como detectamos vazamentos sem quebrar</h2>
-      <div class="steps">
-        <div class="step">Inspeção inicial, checagem de histórico de consumo e avaliação de pontos críticos.</div>
-        <div class="step">Varredura com geofone e correlação do ruído para separar barulho da rede do ruído do vazamento.</div>
-        <div class="step">Teste de pressão por setores para confirmar o trecho comprometido.</div>
-        <div class="step">Marcação do ponto exato e orientação do reparo para reduzir custo e tempo de obra.</div>
-        <div class="step">Quando necessário, emissão de laudo técnico com evidências.</div>
-      </div>
+      <div class="step">Inspeção inicial, checagem de histórico de consumo e avaliação de pontos críticos.</div>
+      <div class="step">Varredura com geofone e correlação do ruído para separar barulho da rede do ruído do vazamento.</div>
+      <div class="step">Teste de pressão por setores para confirmar o trecho comprometido.</div>
+      <div class="step">Marcação do ponto exato e orientação do reparo para reduzir custo e tempo de obra.</div>
+      <div class="step">Quando necessário, emissão de laudo técnico com evidências.</div>
       <div style="margin-top:16px">
         <img src="https://i.ibb.co/ch2Y0W6t/geofone.jpg" alt="Geofone em ação no piso">
       </div>
@@ -313,8 +239,8 @@
       <h2>Precisa de ajuda agora em Rio Preto?</h2>
       <p class="muted">Fale conosco pelo WhatsApp ou ligue — resposta rápida e orientação clara.</p>
       <div class="hero-actions" style="justify-content:center">
-        <a class="btn btn-primary" href="https://wa.me/5517981113437?text=Atendimento%20em%20Rio%20Preto%20agora" target="_blank" rel="noopener nofollow">💬 Chamar no WhatsApp</a>
-        <a class="btn btn-ghost" href="tel:+5517981113437">📞 Ligar:(17)98111-3437</a>
+        <a class="btn btn-primary" href="https://wa.me/5517981113437?text=Atendimento%20em%20Rio%20Preto%20agora" target="_blank" rel="nofollow">💬 Chamar no WhatsApp</a>
+        <a class="btn btn-ghost" href="tel:+5517981113437">📞 Ligar: (17) 98111-3437</a>
       </div>
     </section>
   </div>
@@ -324,14 +250,7 @@
     <div class="footer-inner">
       <p>© Confie Caça Vazamentos — São José do Rio Preto/SP — <a href="https://www.confiecacavazamento.com.br" style="text-decoration:underline">www.confiecacavazamento.com.br</a></p>
       <p class="muted">Atendimento 7 dias na semana 24 horas por dia.</p>
-      <div class="social" style="margin-top:8px">
-        <a href="https://www.instagram.com/confiecacavazamentos/" target="_blank" rel="noopener"><img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram"></a>
-        <a href="https://web.facebook.com/confiecacavazamentos/" target="_blank" rel="noopener"><img src="https://upload.wikimedia.org/wikipedia/commons/0/05/Facebook_Logo_%282019%29.png" alt="Facebook"></a>
-      </div>
-    </div>
-  </footer>
-
-  
-  </div>
-</body>
-</html>
+      <div class="social">
+        <a href="https://www.instagram.com/confiecacavazamentos/" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram"></a>
+        <a href="https://web.facebook.com/confiecacavazamentos/" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/0/05/Facebook_Logo_%282019%29.png" alt="Facebook"></a>
+      </
