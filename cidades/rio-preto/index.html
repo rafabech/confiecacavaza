@@ -4,113 +4,293 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
 
-  <title>Caça Vazamentos em São José do Rio Preto - SP | Geofone | (17) 98111-3437</title>
-  <meta name="description" content="Precisa de caça vazamentos em São José do Rio Preto? Atendemos toda a cidade: bairros, condomínios e regiões próximas com geofone de precisão, laudo técnico e limpeza de caixas d’água.">
-  <meta name="keywords" content="caça vazamentos São José do Rio Preto, detecção de vazamentos geofone Rio Preto, caça vazamentos condomínios Rio Preto, limpeza caixa d’água Rio Preto, caça vazamentos perto de mim">
+  <title>Rio Preto: Caça Vazamentos com Geofone + Higienização de Caixa d’Água | Confie (17) 98111-3437</title>
+  <meta name="description" content="Confie em Rio Preto: localização de vazamentos com geofone sem quebrar, teste de pressão, relatório técnico e limpeza de caixa d’água com desinfecção. Atendimento rápido em todos os bairros e condomínios. WhatsApp (17) 98111-3437.">
+  <meta name="keywords" content="caça vazamentos Rio Preto, geofone Rio Preto, vazamento oculto Rio Preto, limpeza de caixa d’água Rio Preto, higienização reservatórios Rio Preto, laudo técnico Rio Preto, conta de água alta Rio Preto, Confie caça vazamentos rio preto">
 
   <!-- Canonical -->
   <link rel="canonical" href="https://www.confiecacavazamento.com.br/cidades/rio-preto/">
 
   <!-- Open Graph -->
   <meta property="og:type" content="website">
-  <meta property="og:title" content="Caça Vazamentos em São José do Rio Preto - SP | Confie">
-  <meta property="og:description" content="Geofone sem quebrar, vazamento oculto e laudo técnico em São José do Rio Preto. Atendimento em bairros, condomínios e regiões próximas.">
+  <meta property="og:title" content="Confie em Rio Preto | Geofone sem quebrar e limpeza de caixa d’água">
+  <meta property="og:description" content="Detecção precisa de vazamentos e higienização de caixas d’água em São José do Rio Preto. Fale já: (17) 98111-3437.">
   <meta property="og:image" content="https://i.ibb.co/Q30LDtQT/capa-pagina.png">
+  <meta property="og:logo" content="https://i.ibb.co/Q30LDtQT/capa-pagina.png">
   <meta property="og:url" content="https://www.confiecacavazamento.com.br/cidades/rio-preto/">
   <meta name="twitter:card" content="summary_large_image">
 
-  <link rel="icon" href="https://i.ibb.co/mnyBVtj/favicon.png" type="image/png">
+  <!-- Favicon (gota / logo Confie) -->
+  <link rel="icon" href="https://i.ibb.co/Q30LDtQT/capa-pagina.png" type="image/png">
+
+  <!-- Fonte -->
   <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;600;700&display=swap" rel="stylesheet">
 
   <style>
-    :root{--azul:#004d99;--azul-escuro:#00264d;--azul-claro:#e6f0ff}
+    :root{
+      --bg:#0b132b;         /* fundo escuro elegante */
+      --card:#111a3a;       /* cartões */
+      --brand:#25D366;      /* whats/realce */
+      --ink:#e9eefc;        /* texto claro */
+      --muted:#9fb3ff;      /* texto secundário */
+      --accent:#5bc0be;     /* detalhes */
+      --shadow:0 10px 30px rgba(0,0,0,.35)
+    }
     *{box-sizing:border-box}
-    body{margin:0;font-family:'Rubik',Arial,sans-serif;background:var(--azul-claro);color:#222;line-height:1.6}
-    a{text-decoration:none;color:inherit}
-    .hero{background:var(--azul);color:#fff;text-align:center;padding:20px}
-    .hero__media{max-width:600px;width:100%;margin:auto;display:block;border-radius:10px;object-fit:contain}
-    .btn{display:inline-block;margin-top:10px;background:#fff;color:var(--azul);padding:10px 18px;border-radius:8px;font-weight:700;border:1px solid #fff;transition:.2s}
-    .btn:hover{transform:translateY(-1px);box-shadow:0 6px 18px rgba(0,0,0,.12)}
-    .wrap{max-width:1000px;margin:auto;padding:20px}
-    .card{background:#fff;border-radius:12px;padding:20px;margin-bottom:20px;box-shadow:0 6px 20px rgba(0,0,0,.08)}
-    h2{color:var(--azul);margin:0 0 10px}
-    ul.check{list-style:none;padding:0;margin:0}
-    ul.check li{padding-left:25px;position:relative;margin:8px 0}
-    ul.check li::before{content:"✔";position:absolute;left:0;color:#1a9c5e;font-weight:700}
-    .image-block{text-align:center;margin:15px 0}
-    .image-block img{max-width:250px;width:100%;height:auto;margin:auto;display:block;border-radius:8px;box-shadow:0 6px 18px rgba(0,0,0,.06)}
-    footer{background:var(--azul-escuro);color:#fff;text-align:center;padding:15px}
-    footer a img{width:28px;height:28px;margin:0 6px;vertical-align:middle}
-    .whatsapp-button{position:fixed;right:18px;bottom:18px;width:60px;height:60px;border-radius:50%;
-      background:#25D366;display:flex;align-items:center;justify-content:center;
-      box-shadow:0 6px 20px rgba(0,0,0,.3);z-index:999}
-    .whatsapp-button img{width:32px;height:32}
+    body{margin:0;background:linear-gradient(160deg,#0b132b 0%,#1c2541 100%);color:var(--ink);font-family:'Rubik',Arial,sans-serif}
+    a{color:inherit;text-decoration:none}
+    img{max-width:100%;display:block}
+    .container{max-width:1180px;margin:auto;padding:24px}
+    /* header */
+    .topbar{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:14px 24px;background:#0d1740;border-bottom:1px solid rgba(255,255,255,.06);position:sticky;top:0;z-index:9}
+    .brand{display:flex;align-items:center;gap:12px}
+    .brand img{width:44px;height:44px;border-radius:10px;box-shadow:var(--shadow)}
+    .brand span{font-weight:700;letter-spacing:.3px}
+    .cta-mini a{display:inline-flex;align-items:center;gap:10px;background:var(--brand);color:#053b22;font-weight:800;padding:10px 16px;border-radius:10px}
+    .cta-mini a svg{width:18px;height:18px}
+
+    /* hero */
+    .hero{display:grid;grid-template-columns:1.1fr .9fr;gap:28px;align-items:center;margin-top:22px}
+    .hero-card{background:var(--card);border-radius:16px;padding:28px;box-shadow:var(--shadow)}
+    .hero h1{margin:0 0 10px;font-size:34px;line-height:1.15}
+    .hero p{color:var(--muted);margin:0 0 14px}
+    .hero .chips{display:flex;flex-wrap:wrap;gap:8px;margin:14px 0 18px}
+    .chip{background:#0f1a46;border:1px solid rgba(255,255,255,.08);padding:8px 12px;border-radius:999px;font-size:14px;color:#cfe0ff}
+    .hero-actions{display:flex;gap:10px;flex-wrap:wrap}
+    .btn{display:inline-flex;align-items:center;gap:10px;border-radius:12px;padding:12px 18px;font-weight:800;border:2px solid transparent;transition:.2s}
+    .btn-primary{background:var(--brand);color:#083c22}
+    .btn-primary:hover{transform:translateY(-2px)}
+    .btn-ghost{border-color:#2a356b;color:#cfe0ff;background:#0f1a46}
+    .hero-media{background:#0f1a46;border-radius:16px;padding:18px;box-shadow:var(--shadow)}
+    .hero-media img{border-radius:10px}
+
+    /* section */
+    .section{margin:32px 0}
+    .section h2{margin:0 0 14px;font-size:26px}
+    .grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+    .card{background:var(--card);border-radius:14px;padding:18px;box-shadow:var(--shadow)}
+    .card p{color:#cdd9ff;margin:8px 0 0}
+    .steps{counter-reset:stepp}
+    .step{position:relative;padding-left:56px;margin:14px 0}
+    .step:before{
+      counter-increment:stepp;content:counter(stepp);
+      position:absolute;left:0;top:0;width:38px;height:38px;border-radius:12px;
+      background:#0f1a46;border:1px solid rgba(255,255,255,.1);display:flex;align-items:center;justify-content:center;font-weight:800;color:#a9c5ff
+    }
+
+    /* list columns */
+    .cols{columns:2;column-gap:22px}
+    .cols li{break-inside:avoid;margin:6px 0}
+    ul{padding-left:18px}
+    .muted{color:var(--muted)}
+
+    /* footer */
+    footer{margin-top:34px;background:#0d1740;border-top:1px solid rgba(255,255,255,.06)}
+    .footer-inner{max-width:1180px;margin:auto;padding:22px;text-align:center;color:#bfcaf7}
+    .social a img{width:28px;height:28px;margin:0 6px;vertical-align:middle}
+
+    /* sticky bottom bar */
+    .sticky-bar{position:fixed;left:50%;transform:translateX(-50%);bottom:16px;z-index:20;background:#0f1a46;border:1px solid rgba(255,255,255,.08);box-shadow:var(--shadow);padding:10px 14px;border-radius:999px;display:flex;gap:10px;align-items:center}
+    .sticky-bar .btn-primary{padding:10px 14px}
+    .sticky-bar .phone{font-weight:800;letter-spacing:.3px}
+
+    /* responsive */
+    @media (max-width:980px){
+      .hero{grid-template-columns:1fr}
+      .grid-3{grid-template-columns:1fr}
+      .cols{columns:1}
+      .sticky-bar{left:12px;right:12px;transform:none;justify-content:space-between}
+    }
   </style>
+
+  <!-- Structured Data: LocalBusiness + FAQPage -->
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"LocalBusiness",
+    "name":"Confie Caça Vazamentos",
+    "url":"https://www.confiecacavazamento.com.br/",
+    "logo":"https://i.ibb.co/Q30LDtQT/capa-pagina.png",
+    "image":"https://i.ibb.co/Q30LDtQT/capa-pagina.png",
+    "telephone":"+55 17 98111-3437",
+    "address":{"@type":"PostalAddress","addressLocality":"São José do Rio Preto","addressRegion":"SP","addressCountry":"BR"},
+    "areaServed":"São José do Rio Preto - SP",
+    "openingHours":"Mo-Su 00:00-23:59",
+    "sameAs":["https://www.instagram.com/confiecacavazamentos/","https://web.facebook.com/confiecacavazamentos/"]
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"FAQPage",
+    "mainEntity":[
+      {"@type":"Question","name":"O geofone encontra vazamentos sem quebrar?",
+       "acceptedAnswer":{"@type":"Answer","text":"Sim. O geofone capta o ruído gerado pela água sob pressão dentro da tubulação. Com análise de frequência e teste de pressão localizamos o ponto exato para intervir apenas onde é necessário."}},
+      {"@type":"Question","name":"Vocês emitem laudo técnico?",
+       "acceptedAnswer":{"@type":"Answer","text":"Emitimos laudo com registros e orientações para condomínios, comércios e residências. O documento descreve os testes realizados e as evidências encontradas."}},
+      {"@type":"Question","name":"De quanto em quanto tempo devo limpar a caixa d’água?",
+       "acceptedAnswer":{"@type":"Answer","text":"A recomendação é a cada 6 meses. O serviço inclui esvaziamento, escovação, desinfecção e enxágue, reduzindo riscos de contaminação por bactérias como E. coli."}}
+    ]
+  }
+  </script>
 </head>
 <body>
 
-  <!-- HERO -->
-  <section class="hero">
-    <img class="hero__media" src="https://i.ibb.co/Q30LDtQT/capa-pagina.png" alt="Geofone caça vazamentos São José do Rio Preto">
-    <h1>Caça Vazamentos em <strong>São José do Rio Preto - SP</strong></h1>
-    <p>Detecção de vazamentos com geofone • Vazamento oculto • Atendimento em todos os bairros e condomínios • Orçamento no WhatsApp</p>
-    <a class="btn" href="https://wa.me/5517981113437?text=Preciso%20de%20ca%C3%A7a%20vazamentos%20em%20São%20José%20do%20Rio%20Preto" aria-label="Chamar no WhatsApp">WhatsApp: (17) 98111-3437</a>
-  </section>
+  <!-- Barra superior -->
+  <div class="topbar">
+    <div class="brand">
+      <img src="https://i.ibb.co/Q30LDtQT/capa-pagina.png" alt="Logo Confie">
+      <span>Confie Caça Vazamentos • Rio Preto</span>
+    </div>
+    <div class="cta-mini">
+      <a href="tel:+5517981113437" aria-label="Ligar para Confie (17) 98111-3437">
+        <svg viewBox="0 0 24 24" fill="none"><path d="M22 16.92v2a2 2 0 0 1-2.18 2 19.86 19.86 0 0 1-8.63-3.07A19.5 19.5 0 0 1 3.2 10.8 19.86 19.86 0 0 1 .13 2.17 2 2 0 0 1 2.11 0h2a2 2 0 0 1 2 1.72c.12.9.32 1.77.6 2.6a2 2 0 0 1-.45 2.11L5.1 7.59a16 16 0 0 0 7.31 7.31l1.16-1.16a2 2 0 0 1 2.11-.45c.83.28 1.7.48 2.6.6A2 2 0 0 1 22 16.92z" fill="#053b22"/></svg>
+        (17) 98111-3437
+      </a>
+    </div>
+  </div>
 
-  <main class="wrap">
-    <section class="card">
-      <h2>Por que escolher a Confie Caça Vazamentos em Rio Preto?</h2>
-      <p>Ao buscar <strong>“caça vazamentos em São José do Rio Preto”</strong> ou até mesmo <strong>“caça vazamentos perto de mim”</strong>, você deseja rapidez, proximidade e profissionais capacitados. Nossa equipe atende toda a cidade com <strong>geofone de precisão</strong>, identificando vazamentos ocultos sem quebrar.</p>
-      <p>Evite infiltrações, mofo e desperdício de água. Um atendimento rápido faz toda diferença e pode reduzir significativamente sua <strong>conta de água alta</strong>.</p>
+  <div class="container">
+    <!-- HERO -->
+    <section class="hero">
+      <div class="hero-card">
+        <h1>Rio Preto: detecção de vazamentos com <span style="color:var(--accent)">geofone</span> e limpeza de caixa d’água</h1>
+        <p>Equipe local, atendimento rápido e relatório quando necessário. Trabalhamos para reduzir sua conta de água e eliminar infiltrações sem quebra-quebra.</p>
+        <div class="chips">
+          <span class="chip">Vazamento oculto</span>
+          <span class="chip">Teste de pressão</span>
+          <span class="chip">Relatório técnico</span>
+          <span class="chip">Higienização 6 em 6 meses</span>
+        </div>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="https://wa.me/5517981113437?text=Quero%20atendimento%20em%20Rio%20Preto" target="_blank" rel="nofollow">💬 Falar no WhatsApp</a>
+          <a class="btn btn-ghost" href="tel:+5517981113437">📞 Ligar agora: (17) 98111-3437</a>
+        </div>
+        <p class="muted" style="margin-top:10px">Atendemos todos os bairros e condomínios (Damha, Alphaville, Quinta do Golfe, Setlife, Gaivota e muitos outros).</p>
+      </div>
+      <div class="hero-media">
+        <img src="https://i.ibb.co/Q30LDtQT/capa-pagina.png" alt="Confie em Rio Preto - capa">
+      </div>
     </section>
 
-    <section class="card">
-      <h2>Bairros atendidos em São José do Rio Preto</h2>
-      <ul class="check" style="columns:2">
-        <li>Centro</li><li>Redentora</li><li>Boa Vista</li><li>Vila Ercília</li>
-        <li>Higienópolis</li><li>Solo Sagrado</li><li>Estoril</li><li>Jardim Nazareth</li>
-        <li>Eldorado</li><li>Anchieta</li><li>Maceno</li><li>Vila Toninho</li>
-        <li>Parque da Liberdade</li><li>Jardim Paulista</li><li>São Deocleciano</li>
-        <li>Nova Redentora</li><li>Parque Estoril</li><li>Distrito Industrial</li>
-        <li>Jardim Mugnani</li><li>Jardim Yolanda</li><li>Jardim do Bosque</li>
+    <!-- DESTAQUES -->
+    <section class="section">
+      <h2>Por que milhares confiam na Confie em Rio Preto</h2>
+      <div class="grid-3">
+        <div class="card">
+          <strong>Precisão com geofone</strong>
+          <p>Escuta profissional, análise de frequência e teste de pressão para identificar o ponto exato do vazamento.</p>
+        </div>
+        <div class="card">
+          <strong>Laudo e transparência</strong>
+          <p>Registro do que foi testado e orientações de reparo. Nada de adivinhação ou quebra-quebra desnecessário.</p>
+        </div>
+        <div class="card">
+          <strong>Limpeza segura da caixa</strong>
+          <p>Esvaziamento, escovação, desinfecção e enxágue. Água potável e livre de contaminação.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- COMO DETECTAMOS -->
+    <section class="section card">
+      <h2>Como detectamos vazamentos sem quebrar</h2>
+      <div class="step">Inspeção inicial, checagem de histórico de consumo e avaliação de pontos críticos.</div>
+      <div class="step">Varredura com geofone e correlação do ruído para separar barulho da rede do ruído do vazamento.</div>
+      <div class="step">Teste de pressão por setores para confirmar o trecho comprometido.</div>
+      <div class="step">Marcação do ponto exato e orientação do reparo para reduzir custo e tempo de obra.</div>
+      <div class="step">Quando necessário, emissão de laudo técnico com evidências.</div>
+      <div style="margin-top:16px">
+        <img src="https://i.ibb.co/ch2Y0W6t/geofone.jpg" alt="Geofone em ação no piso">
+      </div>
+    </section>
+
+    <!-- LIMPEZA DE CAIXA -->
+    <section class="section card">
+      <h2>Higienização de caixa d’água</h2>
+      <p class="muted">Recomendação: a cada 6 meses.</p>
+      <ul>
+        <li>Esvaziamento seguro e fechamento do registro.</li>
+        <li>Escovação e remoção de sedimentos.</li>
+        <li>Desinfecção controlada e tempo de contato adequado.</li>
+        <li>Enxágue final e limpeza do entorno.</li>
+      </ul>
+      <div style="margin-top:12px">
+        <img src="https://i.ibb.co/fdb9BNmk/caixa.jpg" alt="Antes e depois da limpeza de caixa d’água">
+        <p class="muted" style="text-align:center;margin-top:6px">Antes • Depois</p>
+      </div>
+    </section>
+
+    <!-- PEQUENOS REPAROS -->
+    <section class="section card">
+      <h2>Pequenos reparos hidráulicos</h2>
+      <ul class="cols">
+        <li>Troca de torneiras (pia, tanque, lavatório e jardim)</li>
+        <li>Substituição de registros (banheiro, cozinha e geral)</li>
+        <li>Troca de sifões e flexíveis</li>
+        <li>Troca de válvula de descarga e reparos em caixas acopladas</li>
+        <li>Boia de caixa d’água</li>
+        <li>Instalação de chuveiro elétrico e duchas</li>
+        <li>Instalação ou troca de filtro</li>
+        <li>Pequenos consertos em tubulações aparentes</li>
+        <li>Vedação de vazamentos em torneiras/regs</li>
+        <li>Ajuste de pressão em pontos de uso</li>
       </ul>
     </section>
 
-    <section class="card">
-      <h2>Condomínios atendidos</h2>
-      <ul class="check" style="columns:2">
-        <li>Damha I, II, III, IV</li><li>Village Damha</li><li>Alphaville Rio Preto I e II</li>
-        <li>Quinta do Golfe</li><li>Residencial Gaivota I e II</li><li>Recanto Real</li>
-        <li>Eco Village</li><li>Green Park</li><li>Vivendas Rio Preto</li>
-        <li>Setlife</li><li>Residencial Seixas</li><li>Parque Village</li>
-      </ul>
+    <!-- ATENDIMENTO -->
+    <section class="section card">
+      <h2>Onde atendemos em Rio Preto</h2>
+      <p class="muted">Bairros: Centro, Boa Vista, Higienópolis, Jardim Seixas, Jardim Tarraf, Estoril, Vila Imperial, Jardim Arroyo, Solo Sagrado, Parque Estoril, Jardim Vivendas e outros.</p>
+      <p class="muted">Condomínios: Damha I a VI, Alphaville I e II, Quinta do Golfe I e II, Setlife, Gaivota, Recanto Real, Green Village, Eco Village e região.</p>
     </section>
 
-    <section class="card">
-      <h2>Atendimento próximo aos principais pontos de referência</h2>
-      <ul class="check">
-        <li>Shopping Iguatemi Rio Preto</li>
-        <li>Plaza Avenida Shopping</li>
-        <li>Represa Municipal</li>
-        <li>Hospital de Base</li>
-        <li>Centro Regional de Eventos</li>
-      </ul>
+    <!-- FAQ -->
+    <section class="section">
+      <h2>Perguntas frequentes</h2>
+      <div class="grid-3">
+        <div class="card">
+          <strong>Atendem emergência?</strong>
+          <p>Sim. Sujeito à rota do dia, priorizamos vazamentos ativos e risco de dano estrutural.</p>
+        </div>
+        <div class="card">
+          <strong>O orçamento tem custo?</strong>
+          <p>O diagnóstico tem valor acessível e pode ser abatido no serviço contratado, conforme o caso.</p>
+        </div>
+        <div class="card">
+          <strong>Trabalham em condomínio?</strong>
+          <p>Sim: casas, apartamentos, salas comerciais e áreas comuns — com laudo quando necessário.</p>
+        </div>
+      </div>
     </section>
 
-    <section class="card" style="text-align:center">
-      <h2>Solicite seu orçamento agora</h2>
-      <p>Atendimento imediato em qualquer bairro ou condomínio de <strong>São José do Rio Preto</strong>. Fale agora com um especialista.</p>
-      <a class="btn" href="https://wa.me/5517981113437?text=Quero%20orçamento%20de%20caça%20vazamentos%20em%20São%20José%20do%20Rio%20Preto">💬 Solicitar orçamento no WhatsApp</a>
-      <a class="btn" href="tel:+5517981113437">📞 Ligar agora</a>
+    <!-- CTA FINAL -->
+    <section class="section card" style="text-align:center">
+      <h2>Precisa de ajuda agora em Rio Preto?</h2>
+      <p class="muted">Fale conosco pelo WhatsApp ou ligue — resposta rápida e orientação clara.</p>
+      <div class="hero-actions" style="justify-content:center">
+        <a class="btn btn-primary" href="https://wa.me/5517981113437?text=Atendimento%20em%20Rio%20Preto%20agora" target="_blank" rel="nofollow">💬 Chamar no WhatsApp</a>
+        <a class="btn btn-ghost" href="tel:+5517981113437">📞 Ligar: (17) 98111-3437</a>
+      </div>
     </section>
-  </main>
+  </div>
 
+  <!-- RODAPÉ -->
   <footer>
-    <p>© Confie Caça Vazamentos — São José do Rio Preto/SP — www.confiecacavazamento.com.br</p>
+    <div class="footer-inner">
+      <p>© Confie Caça Vazamentos — São José do Rio Preto/SP — <a href="https://www.confiecacavazamento.com.br" style="text-decoration:underline">www.confiecacavazamento.com.br</a></p>
+      <p class="muted">Atendimento 7 dias na semana 24 horas por dia.</p>
+      <div class="social" style="margin-top:8px">
+        <a href="https://www.instagram.com/confiecacavazamentos/" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram"></a>
+        <a href="https://web.facebook.com/confiecacavazamentos/" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/0/05/Facebook_Logo_%282019%29.png" alt="Facebook"></a>
+      </div>
+    </div>
   </footer>
 
-  <a class="whatsapp-button" href="https://wa.me/5517981113437" target="_blank">
-    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
-  </a>
+  <!-- Sticky CTA bottom -->
+  <div class="sticky-bar" role="region" aria-label="Ações rápidas">
+    <span class="phone">📞 (17) 98111-3437</span>
+    <a class="btn btn-primary" href="https://wa.me/5517981113437?text=Quero%20servi%C3%A7o%20em%20Rio%20Preto" target="_blank" rel="nofollow">WhatsApp agora</a>
+  </div>
 </body>
 </html>
