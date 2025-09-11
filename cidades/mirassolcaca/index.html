@@ -53,18 +53,22 @@
     .social{display:flex;justify-content:center;gap:14px;margin-top:12px}
     .social a img{width:28px;height:28px;display:block}
     .seo-block{font-size:13px;line-height:1.5;color:#9fa8da;margin-top:18px;text-align:left}
+
+    /* Ajuste Mobile */
     @media (max-width:980px){
       .hero{grid-template-columns:1fr}
       .hero h1{font-size:24px}
       .cols{columns:1}
+      .grid-3{grid-template-columns:1fr} /* Cards em 1 coluna */
       .hero-media{padding:0;background:none;box-shadow:none}
       .hero-media img{
-        width:80%;       /* agora maior em 20% */
-        max-width:380px; /* limite */
+        width:110%;       /* Aumentada em 30% em relação ao anterior */
+        max-width:420px;  /* limite maior */
         margin:auto;
         display:block;
       }
     }
+
     .top-phone{padding:14px;background:#0d1740;color:#fff;font-weight:900;font-size:26px;display:flex;align-items:center;justify-content:center;gap:10px}
     .top-phone svg{width:28px;height:28px;fill:#25D366}
   </style>
@@ -134,17 +138,11 @@
       </ul>
     </section>
 
-    <!-- ONDE ATENDEMOS EM MIRASSOL -->
+    <!-- ONDE ATENDEMOS -->
     <section class="section card">
       <h2>Onde atendemos em Mirassol</h2>
-      <p class="muted" style="margin-bottom:8px">Atendemos toda a cidade e região. Exemplos de bairros, loteamentos e condomínios:</p>
-      <ul class="cols">
-        <li>Centro</li><li>Regissol</li><li>Jardim Renascença</li><li>Jardim São José</li><li>Moradas</li>
-        <li>Parque das Flores</li><li>Jardim Imperial</li><li>Santa Rita</li><li>Santa Luzia</li>
-        <li>Jardim Alvorada</li><li>Jardim Ithayê</li><li>Residencial Village</li><li>Golden Park</li>
-        <li>Morada do Sol</li><li>Portais / novos loteamentos</li>
-      </ul>
-      <p class="muted" style="margin-top:10px">Condomínios (exemplos): residenciais fechados, condomínios verticais, centros comerciais e parques industriais de Mirassol.</p>
+      <p class="muted">Bairros: Centro, Regissol, Jardim Renascença, Jardim São José, Moradas, Parque das Flores, Jardim Imperial, Santa Rita, Santa Luzia, Jardim Alvorada, Jardim Ithayê, Residencial Village, Golden Park, Morada do Sol, Portais e novos loteamentos.</p>
+      <p class="muted">Condomínios: residenciais fechados, verticais, centros comerciais e parques industriais.</p>
     </section>
 
     <!-- FAQ -->
