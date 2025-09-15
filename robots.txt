@@ -1,4 +1,9 @@
 User-agent: *
 Allow: /
 
+Disallow: /admin/
+Disallow: /cgi-bin/
+Disallow: /wp-login.php
+Disallow: /wp-admin/
+
 Sitemap: https://www.confiecacavazamento.com.br/sitemap.xml
