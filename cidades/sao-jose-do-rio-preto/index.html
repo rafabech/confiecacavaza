@@ -16,10 +16,10 @@
     header h1 {margin:0; font-size:22px;}
     .top-icons {margin-top:10px;}
     .top-icons img {width:40px; height:40px; margin:0 5px; vertical-align:middle;}
-    .banner {width:100%; max-height:400px; object-fit:cover;}
+    .banner {width:100%; max-height:350px; object-fit:contain; display:block; margin:auto;}
     section {padding:20px; max-width:1200px; margin:auto;}
     h2 {color:#004aad; margin-top:20px;}
-    .service img {max-width:100%; border-radius:6px; margin:10px 0;}
+    .service img {max-width:600px; width:100%; height:auto; border-radius:6px; margin:10px auto; display:block;}
     footer {background:#004aad; color:white; text-align:center; padding:20px; margin-top:20px;}
     footer img {width:40px; height:40px; margin:0 5px;}
     .stars {color:gold; font-size:20px;}
@@ -32,7 +32,7 @@
   <p><span class="stars">★★★★★</span> Somos 5 estrelas no Google</p>
   <div class="top-icons">
     <a href="https://wa.me/5517981113437"><img src="/img/zap.webp" alt="WhatsApp Confie"></a>
-    <a href="https://share.google/TIjofonqIVAVqnOsA" target="_blank"><img src="/img/iconegoogle.webp" alt="Google Meu Negócio Confie"></a>
+    <a href="https://share.google/TIjofonqIVAVqnOsA" target="_blank"><img src="/img/iconegoogle.webp" alt="Google Meu Negócio Confie" style="width:60px;"></a>
     <a href="https://web.facebook.com/confiecacavazamentos/" target="_blank"><img src="/img/logo-face02.webp" alt="Facebook Confie"></a>
     <a href="https://www.instagram.com/confiecacavazamentos/" target="_blank"><img src="/img/logo-insta.webp" alt="Instagram Confie"></a>
   </div>
@@ -44,14 +44,16 @@
   <h2>Localização de Vazamentos com Geofone</h2>
   <p>A <strong>Confie Caça Vazamentos</strong> atua em <strong>São José do Rio Preto</strong> com tecnologia de ponta em <em>geofone eletrônico</em>, que identifica microvazamentos sem necessidade de quebrar pisos e paredes. Atendemos residências, condomínios, comércios e indústrias, emitindo laudo técnico quando necessário.</p>
   <p>Sinais de alerta: conta de água alta, hidrômetro girando com registros fechados, infiltrações em paredes ou perda de pressão na rede. Identificamos o problema com precisão para reduzir seu prejuízo.</p>
-  <img src="/img/cacasite.webp" alt="Detecção de vazamento com geofone em Rio Preto">
+  <div style="text-align:center; margin:20px 0;">
+    <img src="/img/cacasite.webp" alt="Detecção de vazamento com geofone em Rio Preto" style="max-width:600px; width:100%; height:auto; border-radius:8px;">
+  </div>
 </section>
 
 <section>
   <h2>Limpeza de Caixa D’Água em São José do Rio Preto</h2>
   <p>Fazemos <strong>higienização completa de caixas d’água e reservatórios</strong>, removendo barro, limo, ferrugem e bactérias. Recomendamos a limpeza a cada 6 meses para garantir água potável de qualidade para sua família ou empresa.</p>
   <p>Nossa equipe utiliza EPIs adequados, produtos certificados e técnicas seguras para que sua água esteja sempre limpa. Emitimos relatório simples quando solicitado.</p>
-  <img src="/img/limpeza.webp" alt="Limpeza de caixa d’água profissional em Rio Preto">
+  <img src="/img/limpeza.webp" alt="Limpeza de caixa d’água profissional em Rio Preto" class="service">
 </section>
 
 <section>
@@ -64,7 +66,7 @@
     <li>Troca de boia de caixa d’água e manutenção preventiva;</li>
     <li>Vedação de vazamentos em conexões aparentes.</li>
   </ul>
-  <img src="/img/Pequenosreparos.webp" alt="Pequenos reparos hidráulicos em Rio Preto">
+  <img src="/img/Pequenosreparos.webp" alt="Pequenos reparos hidráulicos em Rio Preto" class="service">
 </section>
 
 <section>
@@ -88,6 +90,14 @@
   </ul>
 </section>
 
+<!-- Google Meu Negócio em destaque -->
+<div style="text-align:center; margin:20px 0;">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/c/cd/Google_My_Business_logo.png" 
+       alt="Google Meu Negócio Confie" 
+       style="max-width:180px; height:auto; margin:10px auto; display:block;">
+  <p><span style="color:gold; font-size:22px;">★★★★★</span> Avaliação máxima no Google</p>
+</div>
+
 <footer>
   <p><span class="stars">★★★★★</span> Somos 5 estrelas no Google</p>
   <a href="https://wa.me/5517981113437"><img src="/img/zap.webp" alt="WhatsApp Confie"></a>
@@ -100,6 +110,14 @@
     caça vazamentos São José do Rio Preto, geofone Rio Preto, detectar vazamento sem quebrar, encanador Rio Preto, reparos hidráulicos, limpeza de caixa d’água Rio Preto, conta de água alta, infiltração, microvazamentos, laudo técnico de vazamento.
   </p>
 </footer>
+
+<!-- Botão flutuante WhatsApp -->
+<a href="https://wa.me/5517981113437" target="_blank" 
+   style="position:fixed; bottom:20px; right:20px; z-index:1000;">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" 
+       alt="WhatsApp Confie" width="70" height="70" 
+       style="border-radius:50%; box-shadow:0 4px 8px rgba(0,0,0,0.3);">
+</a>
 
 </body>
 </html>
