@@ -5,16 +5,13 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
 
   <title>Caça Vazamentos e Limpeza de Caixa d’Água em Bady Bassitt - SP | Confie (17) 98111-3437</title>
-  <meta name="description" content="Confie Caça Vazamentos e Limpeza de Caixa d’Água em Bady Bassitt - SP. Geofone sem quebrar, microvazamentos, higienização de caixas d’água, pequenos reparos hidráulicos e laudos técnicos. Mais de 1000 clientes satisfeitos na região. Atendimento: (17) 98111-3437.">
-  <meta name="keywords" content="Bady Bassitt, caça vazamentos, encontrar vazamento, aparelho que encontra vazamento, conta de água alta, conta de água cara, detectar infiltração, microvazamento, limpeza de caixa d’água, encanador Bady Bassitt, reparos hidráulicos, higienização reservatórios">
-
-  <!-- Canonical -->
+  <meta name="description" content="Confie Caça Vazamentos e Limpeza de Caixa d’Água em Bady Bassitt - SP. Geofone sem quebrar, microvazamentos, higienização de caixas, reparos hidráulicos e laudos técnicos. Atendimento rápido: (17) 98111-3437.">
   <link rel="canonical" href="https://www.confiecacavazamento.com.br/cidades/bady-bassitt/">
 
-  <!-- Open Graph -->
+  <!-- Open Graph / Twitter -->
   <meta property="og:type" content="website">
   <meta property="og:title" content="Caça Vazamentos e Limpeza de Caixa d’Água em Bady Bassitt - SP | Confie">
-  <meta property="og:description" content="Geofone sem quebrar, vazamentos ocultos, higienização de caixas d’água e pequenos reparos hidráulicos em Bady Bassitt.">
+  <meta property="og:description" content="Geofone sem quebrar, vazamentos ocultos, limpeza de caixas d’água e pequenos reparos hidráulicos em Bady Bassitt.">
   <meta property="og:image" content="https://i.ibb.co/Q30LDtQT/capa-pagina.png">
   <meta property="og:url" content="https://www.confiecacavazamento.com.br/cidades/bady-bassitt/">
   <meta name="twitter:card" content="summary_large_image">
@@ -22,163 +19,274 @@
   <!-- Favicon -->
   <link rel="icon" href="https://i.ibb.co/mnyBVtj/favicon.png" type="image/png">
 
-  <!-- Fonte -->
-  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;600;700&display=swap" rel="stylesheet">
+  <!-- Performance hints -->
+  <link rel="preload" as="image" href="https://i.ibb.co/Q30LDtQT/capa-pagina.png" imagesrcset="https://i.ibb.co/Q30LDtQT/capa-pagina.png 1200w" imagesizes="(max-width: 640px) 100vw, 1200px">
+  <meta http-equiv="Cache-Control" content="public, max-age=31536000, immutable">
+  <meta http-equiv="Expires" content="Tue, 31 Dec 2030 23:59:59 GMT">
 
   <style>
     :root{
       --azul:#004d99;
-      --azul-escuro:#00264d;
-      --azul-claro:#e6f0ff;
+      --azul-escuro:#022c5a;
+      --azul-claro:#eaf2ff;
+      --verde:#1a9c5e;
+      --texto:#1a1f2b;
     }
-    *{box-sizing:border-box}
-    body{margin:0;font-family:'Rubik',Arial,sans-serif;background:var(--azul-claro);color:#222;line-height:1.6}
-    a{text-decoration:none;color:inherit}
+    /* Reset e base */
+    *,*::before,*::after{box-sizing:border-box}
+    html,body{height:100%}
+    body{
+      margin:0;background:var(--azul-claro);color:var(--texto);line-height:1.6;
+      font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Ubuntu,"Helvetica Neue",Arial,"Noto Sans","Apple Color Emoji","Segoe UI Emoji",sans-serif;
+      text-rendering:optimizeLegibility;-webkit-font-smoothing:antialiased
+    }
+    a{color:inherit;text-decoration:none}
+    img{display:block;max-width:100%;height:auto}
+
+    /* Barra superior com redes */
+    .topbar{
+      background:#fff;border-bottom:1px solid #dde6f7;position:sticky;top:0;z-index:50
+    }
+    .topbar__wrap{
+      max-width:1100px;margin:auto;padding:8px 16px;display:flex;align-items:center;justify-content:center;gap:16px
+    }
+    .stars{color:#ffb400;font-size:18px;letter-spacing:1px;white-space:nowrap}
+    .social{
+      display:flex;align-items:center;gap:14px
+    }
+    .icon{height:28px;width:auto;display:block}
+    .icon--gmaps{height:28px;width:auto;/* mantém proporção do arquivo sem achatar */}
+    .pill{
+      background:var(--azul);color:#fff;padding:6px 10px;border-radius:999px;font-weight:700;white-space:nowrap
+    }
 
     /* HERO */
-    .hero{background:var(--azul);color:#fff;text-align:center;padding:20px}
+    .hero{
+      background:var(--azul);color:#fff
+    }
+    .hero__wrap{
+      max-width:1100px;margin:auto;padding:16px
+    }
     .hero__media{
-      max-width:1000px;
-      width:100%;
-      height:auto;
-      border-radius:10px;
-      display:block;
-      margin:auto;
+      border-radius:12px;box-shadow:0 10px 24px rgba(0,0,0,.18);
+      width:100%;max-width:1100px;
+      /* Mantém proporção, limita altura no mobile para não “estourar” LCP */
+      max-height:360px;object-fit:cover;object-position:center
     }
-    .btn{display:inline-block;margin-top:10px;background:#fff;color:var(--azul);padding:10px 18px;border-radius:8px;font-weight:700;border:1px solid #fff;transition:.2s}
-    .btn:hover{transform:translateY(-1px);box-shadow:0 6px 18px rgba(0,0,0,.12)}
+    @media (min-width:768px){
+      .hero__media{max-height:420px}
+    }
+    .hero h1{margin:16px 0 6px;font-size:clamp(20px,3.3vw,34px)}
+    .hero p{margin:0 0 10px;font-size:clamp(14px,2.2vw,18px)}
+    .cta-row{display:flex;gap:10px;flex-wrap:wrap}
+    .btn{
+      display:inline-block;background:#fff;color:var(--azul);padding:10px 16px;border-radius:10px;
+      border:1px solid #fff;font-weight:800;transition:transform .18s, box-shadow .18s
+    }
+    .btn:hover{transform:translateY(-1px);box-shadow:0 10px 22px rgba(0,0,0,.12)}
 
-    /* TOPO ÍCONES */
-    .top-icons{text-align:center;padding:8px;background:#fff}
-    .top-icons img{height:40px;width:auto;margin:0 8px;vertical-align:middle}
-
-    /* CONTEÚDO */
-    .wrap{max-width:1000px;margin:auto;padding:20px}
-    .card{background:#fff;border-radius:12px;padding:20px;margin-bottom:20px;box-shadow:0 6px 20px rgba(0,0,0,.08)}
-    h2{color:var(--azul);margin:0 0 10px}
-
+    /* Conteúdo */
+    .wrap{max-width:1100px;margin:auto;padding:18px}
+    .card{background:#fff;border-radius:14px;padding:18px;margin-bottom:16px;box-shadow:0 6px 18px rgba(0,0,0,.06)}
+    .card h2{color:var(--azul);margin:0 0 8px;font-size:clamp(18px,2.5vw,26px)}
+    .muted{opacity:.85}
     ul.check{list-style:none;padding:0;margin:0}
-    ul.check li{padding-left:25px;position:relative;margin:8px 0}
-    ul.check li::before{content:"✔";position:absolute;left:0;color:#1a9c5e;font-weight:700}
+    ul.check li{padding-left:26px;position:relative;margin:7px 0}
+    ul.check li::before{content:"✔";position:absolute;left:0;top:0;color:var(--verde);font-weight:900}
 
-    /* imagens */
-    .image-block{text-align:center;margin:15px 0}
-    .image-block img{max-width:325px;width:100%;height:auto;margin:auto;display:block;border-radius:8px;box-shadow:0 6px 18px rgba(0,0,0,.06)}
+    .grid-2{display:grid;gap:14px}
+    @media (min-width:850px){.grid-2{grid-template-columns:1fr 1fr}}
 
-    /* RODAPÉ */
-    footer{background:var(--azul-escuro);color:#fff;text-align:center;padding:15px}
-    footer a img{height:40px;width:auto;margin:0 8px;vertical-align:middle}
+    /* Rodapé */
+    footer{background:var(--azul-escuro);color:#fff}
+    .footwrap{max-width:1100px;margin:auto;padding:24px 16px}
+    .foot-copy{opacity:.9;margin-top:8px}
+    .foot-social{display:flex;justify-content:center;gap:14px;margin-top:10px}
+    .foot-kws{margin-top:14px;font-size:13px;opacity:.95;line-height:1.55}
 
-    /* WhatsApp flutuante */
+    /* Botão WhatsApp flutuante */
     .whatsapp-button{
-      position:fixed;right:18px;bottom:18px;width:70px;height:70px;border-radius:50%;
+      position:fixed;right:16px;bottom:16px;width:66px;height:66px;border-radius:50%;
       background:#25D366;display:flex;align-items:center;justify-content:center;
-      box-shadow:0 10px 25px rgba(0,0,0,.25);z-index:999
+      box-shadow:0 14px 28px rgba(0,0,0,.28);z-index:60
     }
-    .whatsapp-button img{width:38px;height:38px}
+    .whatsapp-button img{width:36px;height:36px}
+
+    /* Acessibilidade/contraste de links no fundo escuro */
+    .btn--dark{background:transparent;border-color:#fff;color:#fff}
+    .btn--dark:hover{background:#fff;color:var(--azul)}
   </style>
 </head>
 <body>
 
-  <!-- TOPO -->
-  <div class="top-icons">
-    ⭐⭐⭐⭐⭐ Avaliação 5 estrelas no Google
-    <a href="https://wa.me/5517981113437" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp"></a>
-    <a href="https://www.instagram.com/confiecacavazamentos/" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram"></a>
-    <a href="https://web.facebook.com/confiecacavazamentos/" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/0/05/Facebook_Logo_%282019%29.png" alt="Facebook"></a>
-    <a href="https://share.google/TIjofonqIVAVqnOsA" target="_blank"><img src="https://i.ibb.co/VpS0XmHw/iconegoogle.png" alt="Google Meu Negócio"></a>
+  <!-- TOPO: avaliação + redes sociais centralizadas -->
+  <div class="topbar" aria-label="Barra superior">
+    <div class="topbar__wrap">
+      <span class="stars" aria-hidden="true">★★★★★</span>
+      <span class="muted"><strong>Avaliação 5 estrelas</strong> no Google Meu Negócio</span>
+      <nav class="social" aria-label="Redes sociais">
+        <a href="https://wa.me/5517981113437" class="pill" aria-label="Falar no WhatsApp">(17) 98111-3437 • WhatsApp</a>
+        <a href="https://share.google/TIjofonqIVAVqnOsA" target="_blank" rel="noopener" aria-label="Google Meu Negócio">
+          <img class="icon icon--gmaps" src="https://i.ibb.co/VpS0XmHw/iconegoogle.png" alt="Google Meu Negócio">
+        </a>
+        <a href="https://www.instagram.com/confiecacavazamentos/" target="_blank" rel="noopener" aria-label="Instagram">
+          <img class="icon" src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram">
+        </a>
+        <a href="https://web.facebook.com/confiecacavazamentos/" target="_blank" rel="noopener" aria-label="Facebook">
+          <img class="icon" src="https://upload.wikimedia.org/wikipedia/commons/0/05/Facebook_Logo_%282019%29.png" alt="Facebook">
+        </a>
+      </nav>
+    </div>
   </div>
 
   <!-- HERO -->
-  <section class="hero" aria-label="Confie Caça Vazamentos em Bady Bassitt">
-    <img class="hero__media" src="https://i.ibb.co/Q30LDtQT/capa-pagina.png" alt="Confie Caça Vazamentos Bady Bassitt - capa oficial">
-    <h1>Caça Vazamentos e Limpeza de Caixa d’Água em <strong>Bady Bassitt - SP</strong></h1>
-    <p>📞 Atendimento: <strong>(17) 98111-3437</strong></p>
-    <a class="btn" href="https://wa.me/5517981113437?text=Olá!%20Preciso%20de%20caça%20vazamentos%20ou%20limpeza%20de%20caixa%20d’água%20em%20Bady%20Bassitt">💬 Fale no WhatsApp</a>
-  </section>
+  <header class="hero">
+    <div class="hero__wrap">
+      <img class="hero__media" src="https://i.ibb.co/Q30LDtQT/capa-pagina.png" alt="Confie Caça Vazamentos Bady Bassitt - capa oficial" width="1200" height="675" fetchpriority="high" decoding="async">
+      <h1>Caça Vazamentos e Limpeza de Caixa d’Água em <strong>Bady Bassitt - SP</strong></h1>
+      <p>Atendimento imediato com geofone sem quebrar. <strong>Telefone/WhatsApp: (17) 98111-3437</strong></p>
+      <div class="cta-row">
+        <a class="btn" href="https://wa.me/5517981113437?text=Olá!%20Preciso%20de%20caça%20vazamentos%20ou%20limpeza%20de%20caixa%20d’água%20em%20Bady%20Bassitt">💬 Fale no WhatsApp</a>
+        <a class="btn btn--dark" href="tel:+5517981113437">📞 Ligar agora</a>
+      </div>
+    </div>
+  </header>
 
   <!-- CONTEÚDO -->
   <main class="wrap">
-    <!-- DETECÇÃO -->
-    <section class="card" id="deteccao">
-      <h2>Caça Vazamentos em Bady Bassitt com Geofone</h2>
-      <p>O <strong>geofone</strong> é o equipamento ideal para encontrar <em>vazamentos ocultos</em> sem a necessidade de quebrar pisos ou paredes. Ele capta sons de <strong>microvazamentos</strong> e permite localizar o problema com precisão, evitando desperdício de água e reformas desnecessárias.</p>
-      <p>Em Bady Bassitt, a <strong>Confie Caça Vazamentos</strong> já ajudou centenas de famílias e empresas, oferecendo diagnósticos rápidos, laudos técnicos quando necessário e soluções duradouras para reduzir sua conta de água.</p>
-      <div class="image-block">
-        <img src="https://i.ibb.co/ch2Y0W6t/geofone.jpg" alt="Detecção de vazamento com geofone em Bady Bassitt - SP">
+
+    <!-- Seção serviços principais -->
+    <section class="card grid-2" id="servicos">
+      <div>
+        <h2>Caça Vazamentos com Geofone — Precisão sem Quebra</h2>
+        <p>
+          Utilizamos <strong>geofone profissional</strong> para localizar <em>vazamentos ocultos</em> em tubulações de água fria e quente,
+          sem danificar pisos e paredes. O equipamento capta microvibrações e frequências do vazamento,
+          permitindo um diagnóstico rápido e cirúrgico. Emitimos <strong>laudo simples</strong> quando necessário.
+        </p>
+        <ul class="check">
+          <li>Detecção de <strong>microvazamentos</strong> em residências, comércios e condomínios.</li>
+          <li>Verificação de <strong>infiltrações</strong> e perda de água no hidrômetro.</li>
+          <li>Localização de vazamentos em <strong>áreas externas</strong>, jardins e piscinas.</li>
+          <li>Orientação para reduzir <strong>conta de água alta</strong> e evitar desperdício.</li>
+        </ul>
+        <p class="muted"><strong>Atendimento em Bady Bassitt</strong> e região — sem taxa surpresa.</p>
       </div>
-      <p><strong>📞 Atendimento: (17) 98111-3437</strong></p>
+      <div>
+        <figure class="image-block" style="text-align:center;margin:0">
+          <img loading="lazy" decoding="async" src="https://i.ibb.co/ch2Y0W6t/geofone.jpg" alt="Detecção de vazamento com geofone em Bady Bassitt - SP" width="900" height="600" style="border-radius:10px;box-shadow:0 8px 22px rgba(0,0,0,.08)">
+        </figure>
+      </div>
     </section>
 
-    <!-- LIMPEZA -->
-    <section class="card" id="caixa-dagua">
-      <h2>Limpeza de Caixa d’Água em Bady Bassitt</h2>
-      <p>A <strong>limpeza da caixa d’água</strong> deve ser realizada a cada 6 meses. Reservatórios sem higienização acumulam barro, ferrugem, limo e bactérias, colocando a saúde em risco.</p>
-      <p>A <strong>Confie</strong> executa todas as etapas: esvaziamento, escovação, desinfecção controlada, enxágue e vedação correta. Emitimos relatório simples quando solicitado, para residências, condomínios, empresas e indústrias.</p>
-      <div class="image-block">
-        <img src="https://i.ibb.co/C57348NZ/limp.png" alt="Processo de limpeza de caixa d’água em Bady Bassitt - SP">
+    <!-- Limpeza de caixa d'água -->
+    <section class="card grid-2" id="caixa-dagua">
+      <div>
+        <h2>Limpeza de Caixa d’Água — Higienização Completa</h2>
+        <p>
+          Recomendamos a <strong>limpeza da caixa d’água a cada 6 meses</strong>. Nossa equipe executa esvaziamento,
+          escovação, remoção de lodo, <strong>desinfecção controlada</strong>, enxágue e vedação correta.
+          Tudo com EPIs, produtos adequados e checklist de segurança.
+        </p>
+        <ul class="check">
+          <li>Residências, prédios, comércios e indústrias.</li>
+          <li>Reservatórios de fibra, polietileno e alvenaria.</li>
+          <li>Relatório simples mediante solicitação.</li>
+          <li>Troca de boia e verificação de vedação.</li>
+        </ul>
+        <p><strong>📞 Ligue agora: (17) 98111-3437</strong></p>
       </div>
-      <p><strong>📞 Ligue: (17) 98111-3437</strong></p>
+      <div>
+        <figure class="image-block" style="text-align:center;margin:0">
+          <img loading="lazy" decoding="async" src="https://i.ibb.co/C57348NZ/limp.png" alt="Processo de limpeza de caixa d’água em Bady Bassitt - SP" width="900" height="600" style="border-radius:10px;box-shadow:0 8px 22px rgba(0,0,0,.08)">
+        </figure>
+      </div>
     </section>
 
-    <!-- REPAROS -->
+    <!-- Reparos -->
     <section class="card" id="reparos-hidraulicos">
-      <h2>🚰 Pequenos Reparos Hidráulicos em Bady Bassitt</h2>
-      <ul class="check">
-        <li>Troca de torneiras (pia, tanque, jardim, lavatório).</li>
-        <li>Substituição de registros (chuveiro, cozinha, banheiro, geral).</li>
-        <li>Troca de sifão e flexíveis.</li>
-        <li>Reparo ou substituição de válvula de descarga.</li>
-        <li>Substituição de boia de caixa d’água.</li>
-        <li>Troca ou instalação de chuveiro elétrico.</li>
-        <li>Troca de ralos e grelhas.</li>
-        <li>Vedação de vazamentos em torneiras e registros.</li>
-        <li>Instalação ou substituição de filtros de água.</li>
-        <li>Pequenos reparos em tubulações aparentes.</li>
-        <li>Ajuste de pressão em pontos de uso.</li>
-      </ul>
-      <p><strong>📞 Atendimento: (17) 98111-3437</strong></p>
+      <h2>🚰 Pequenos Reparos Hidráulicos</h2>
+      <div class="grid-2">
+        <ul class="check">
+          <li>Troca de torneiras (pia, tanque, jardim, lavatório).</li>
+          <li>Substituição de registros (chuveiro, cozinha, banheiro, geral).</li>
+          <li>Reparo de válvula de descarga e sifão.</li>
+          <li>Instalação de filtros e aquecedores de passagem.</li>
+          <li>Correção de vazamentos aparentes e infiltrações.</li>
+        </ul>
+        <ul class="check">
+          <li>Troca de boia de caixa d’água e vedação de tampa.</li>
+          <li>Pressurização e ajuste de pressão em pontos de uso.</li>
+          <li>Troca/instalação de chuveiro elétrico.</li>
+          <li>Revisão de ralos, grelhas e desconectores.</li>
+          <li>Suporte em pequenas reformas hidráulicas.</li>
+        </ul>
+      </div>
+      <p class="muted">Serviço limpo, rápido e com garantia.</p>
     </section>
 
-    <!-- BAIRROS -->
+    <!-- Bairros -->
     <section class="card" id="bairros">
       <h2>Onde atendemos em Bady Bassitt</h2>
-      <p>Atendemos toda a cidade de Bady Bassitt, incluindo:</p>
+      <p>Atendemos toda a cidade e arredores, incluindo:</p>
       <ul class="check">
-        <li>Centro</li>
-        <li>Jardim San Remo</li>
-        <li>Residencial Monte Carlo</li>
-        <li>Parque das Flores</li>
-        <li>Jardim Primavera</li>
-        <li>Residencial Village</li>
-        <li>Conjuntos habitacionais e novos loteamentos</li>
+        <li>Centro • Jardim San Remo • Residencial Monte Carlo • Parque das Flores • Jardim Primavera • Residencial Village</li>
+        <li>Condomínios fechados, verticais e novos loteamentos</li>
       </ul>
-      <p class="muted">Também atendemos condomínios fechados, verticais e empresas da região.</p>
     </section>
 
     <!-- CTA -->
     <section class="card" style="text-align:center">
-      <p><strong>📞 Solicite agora mesmo um orçamento em Bady Bassitt: (17) 98111-3437</strong></p>
-      <a class="btn" href="https://wa.me/5517981113437?text=Quero%20orçamento%20em%20Bady%20Bassitt">💬 Orçamento no WhatsApp</a>
-      <a class="btn" href="tel:+5517981113437">📞 Ligar agora</a>
+      <p><strong>📞 Solicite agora um orçamento em Bady Bassitt: (17) 98111-3437</strong></p>
+      <div class="cta-row" style="justify-content:center">
+        <a class="btn" href="https://wa.me/5517981113437?text=Quero%20orçamento%20em%20Bady%20Bassitt">💬 Orçamento no WhatsApp</a>
+        <a class="btn btn--dark" href="tel:+5517981113437">📞 Ligar agora</a>
+      </div>
     </section>
   </main>
 
-  <!-- RODAPÉ -->
+  <!-- Rodapé -->
   <footer>
-    <p>© Confie Caça Vazamentos — Bady Bassitt/SP — 
-      <a href="https://www.confiecacavazamento.com.br">www.confiecacavazamento.com.br</a></p>
-    <p><strong>📞 Telefone: (17) 98111-3437</strong></p>
-    <p>Siga a Confie nas redes sociais:</p>
-    <a href="https://wa.me/5517981113437" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp"></a>
-    <a href="https://www.instagram.com/confiecacavazamentos/" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram"></a>
-    <a href="https://web.facebook.com/confiecacavazamentos/" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/0/05/Facebook_Logo_%282019%29.png" alt="Facebook"></a>
-    <a href="https://share.google/TIjofonqIVAVqnOsA" target="_blank"><img src="https://i.ibb.co/VpS0XmHw/iconegoogle.png" alt="Google Meu Negócio"></a>
+    <div class="footwrap">
+      <nav class="foot-social" aria-label="Redes sociais rodapé">
+        <a href="https://share.google/TIjofonqIVAVqnOsA" target="_blank" rel="noopener" aria-label="Google Meu Negócio">
+          <img class="icon icon--gmaps" src="https://i.ibb.co/VpS0XmHw/iconegoogle.png" alt="Google Meu Negócio">
+        </a>
+        <a href="https://wa.me/5517981113437" aria-label="WhatsApp"><img class="icon" src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp"></a>
+        <a href="https://www.instagram.com/confiecacavazamentos/" target="_blank" rel="noopener" aria-label="Instagram">
+          <img class="icon" src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram">
+        </a>
+        <a href="https://web.facebook.com/confiecacavazamentos/" target="_blank" rel="noopener" aria-label="Facebook">
+          <img class="icon" src="https://upload.wikimedia.org/wikipedia/commons/0/05/Facebook_Logo_%282019%29.png" alt="Facebook">
+        </a>
+      </nav>
+
+      <p class="foot-copy">© Confie Caça Vazamentos — Bady Bassitt/SP —
+        <a class="btn" style="margin-left:6px" href="https://www.confiecacavazamento.com.br">www.confiecacavazamento.com.br</a>
+        <span class="pill" style="margin-left:8px">📞 (17) 98111-3437</span>
+      </p>
+
+      <!-- Bloco de keywords (rodapé rico em termos para SEO local) -->
+      <div class="foot-kws">
+        <strong>Caça vazamentos em Bady Bassitt</strong>, caça vazamentos perto de mim, encontrar vazamento, achar vazamento,
+        aparelho que encontra vazamento, geofone profissional, microvazamentos, infiltração, vazamento oculto,
+        <strong>conta de água alta</strong>, como descobrir vazamento, detecção de vazamentos sem quebrar, teste de estanqueidade,
+        <strong>limpeza de caixa d’água</strong>, higienização de reservatórios, caixa d’água suja, troca de boia, vedação de tampa,
+        manutenção hidráulica, <strong>encanador</strong> em Bady Bassitt, reparos hidráulicos, troca de torneiras e registros,
+        vazamento no quintal, vazamento no banheiro, redução de consumo, conserto de vazamentos, laudo simples de vazamento,
+        atendimento residencial, comercial e condomínios.
+      </div>
+    </div>
   </footer>
 
-  <!-- Botão WhatsApp -->
-  <a class="whatsapp-button" href="https://wa.me/5517981113437" target="_blank">
-    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
+  <!-- Botão WhatsApp flutuante -->
+  <a class="whatsapp-button" href="https://wa.me/5517981113437" target="_blank" aria-label="Abrir conversa no WhatsApp">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="" width="36" height="36" loading="lazy" decoding="async">
   </a>
+
+  <!-- JS mínimo e sem bloqueio (somente se necessário futuramente) -->
+  <script defer>
+    // Placeholder para eventuais melhorias (sem bloquear renderização)
+  </script>
 </body>
 </html>
