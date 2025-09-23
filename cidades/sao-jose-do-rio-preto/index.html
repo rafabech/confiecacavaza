@@ -1,494 +1,145 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <!-- =========================================================
-       TELEFONE NA PRIMEIRA LINHA + METAS BÁSICAS
-  ========================================================== -->
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="format-detection" content="telephone=yes">
-  <meta name="robots" content="index,follow">
   <title>Caça Vazamentos em São José do Rio Preto | Confie</title>
-  <meta name="description" content="Confie Caça Vazamentos em São José do Rio Preto. Geofone sem quebrar, encanador de confiança, limpeza de caixa d’água e pequenos reparos hidráulicos. Ligue (17) 98111-3437.">
-  <link rel="canonical" href="https://www.confiecacavazamento.com.br/cidades/sao-jose-do-rio-preto/index.html">
+  <meta name="description" content="Confie Caça Vazamentos em São José do Rio Preto. Localizamos vazamentos ocultos com geofone, encanador de confiança, limpeza de caixa d’água e pequenos reparos hidráulicos. Ligue (17) 98111-3437.">
+  <link rel="icon" type="image/webp" href="/imagem/gota.webp">
 
-  <!-- FAVICON -->
-  <link rel="icon" href="/img/gota.webp" type="image/webp">
-
-  <!-- OG / TW -->
-  <meta property="og:type" content="website">
-  <meta property="og:title" content="Confie | Caça Vazamentos em São José do Rio Preto">
-  <meta property="og:description" content="Atendimento rápido: (17) 98111-3437  Detecção de vazamentos com geofone sem quebrar, encanador e limpeza de caixa d’água..">
-  <meta property="og:image" content="https://www.confiecacavazamento.com.br/img/capa.webp">
-  <meta property="og:url" content="https://www.confiecacavazamento.com.br/cidades/rio-preto/index.html">
-  <meta name="twitter:card" content="summary_large_image">
-
-  <!-- =========================================================
-       CSS: LEVE, RÁPIDO E RESPONSIVO
-  ========================================================== -->
   <style>
-    :root{
-      --azul:#004080;
-      --azul-escuro:#022b5d;
-      --azul-claro:#e9f2ff;
-      --verde:#25d366;
-      --cinza:#f6f7fb;
-      --texto:#1c1c1c;
-    }
-    *{box-sizing:border-box}
-    html,body{margin:0;padding:0;font-family:Arial,Helvetica,sans-serif;color:var(--texto);line-height:1.7;background:#fff}
-    a{color:inherit;text-decoration:none}
-    .wrap{max-width:1120px;margin:auto;padding:18px}
+    body {font-family: Arial, sans-serif; margin:0; padding:0; line-height:1.7; background:#f9f9f9; color:#333;}
+    header {background:#004080; color:#fff; padding:12px; text-align:center;}
+    header a {color:#fff; text-decoration:none; font-weight:bold;}
 
-    /* HEADER */
-    header{
-      background:var(--azul);
-      color:#fff;
-      text-align:center;
-      padding:10px 16px;
+    /* Topo */
+    .top-icons, .footer-icons {
+      display:flex;
+      justify-content:center;
+      align-items:center;
+      flex-wrap:wrap;
+      gap:15px;
+      margin-top:10px;
     }
-    header .tel{
-      font-weight:800;
-      font-size:18px;
-      letter-spacing:.3px;
-      display:inline-block;
-      padding:6px 10px;
-      border-radius:8px;
-      background:rgba(255,255,255,.08);
+    .top-icons img, .footer-icons img {
+      width:36px;
+      height:36px;
     }
-    .social-top{display:flex;gap:10px;justify-content:center;align-items:center;margin-top:8px;flex-wrap:wrap}
-    .social-top img{width:32px;height:auto}
-    .google-icon{width:64px;height:auto}
+    .google-icon { width:60px; height:auto; }
 
-    /* HERO - sem cortar a imagem no desktop */
-    .hero{
-      background:linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(233,242,255,1) 100%);
-      padding:10px 0 0 0;
-    }
-    .hero__inner{max-width:1120px;margin:auto;display:grid;grid-template-columns:1.15fr .85fr;gap:20px;align-items:center;padding:0 18px}
-    .hero__text h1{color:var(--azul);margin:10px 0 8px;font-size:28px}
-    .hero__text p{margin:6px 0}
-    .chips{display:flex;gap:8px;flex-wrap:wrap;margin-top:10px}
-    .chip{background:#fff;border:1px solid #dfe8ff;color:#1c2a4a;padding:6px 10px;border-radius:20px;font-size:13px}
-    .cta-row{display:flex;gap:10px;flex-wrap:wrap;margin-top:12px}
-    .btn{display:inline-block;padding:10px 14px;border-radius:10px;border:1px solid var(--azul);background:var(--azul);color:#fff;font-weight:700}
-    .btn--light{background:#fff;color:var(--azul)}
-    .kicker{font-size:13px;color:#375ea3;margin-top:6px}
-
-    /* HERO MEDIA como background responsivo */
-    .hero__media{
+    /* Banner */
+    .banner img {
       width:100%;
-      aspect-ratio: 16/9;
-      border-radius:14px;
-      background:#cfe0ff url('/img/capa.webp') center/cover no-repeat;
-      box-shadow:0 8px 30px rgba(0,0,0,.08);
+      max-height:380px;
+      object-fit:cover;
+      display:block;
     }
 
-    /* CARDS */
-    .cards{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin:18px 0}
-    .card{background:#fff;border-radius:12px;border:1px solid #eef2ff;padding:16px;box-shadow:0 6px 18px rgba(0,0,0,.06)}
-    .card h2{margin:0 0 8px;color:var(--azul);font-size:20px}
-    .check{list-style:none;padding:0;margin:10px 0}
-    .check li{padding-left:26px;position:relative;margin:6px 0}
-    .check li:before{content:"✔";position:absolute;left:0;top:0;color:#1a9c5e;font-weight:900}
+    .container {width:95%; max-width:1100px; margin:auto; padding:20px;}
+    h1, h2, h3 {color:#004080;}
+    footer {background:#004080; color:#fff; padding:20px; text-align:center;}
 
-    /* BLOCO PROVAS SOCIAIS */
-    .trust{background:var(--cinza);border:1px dashed #dae4ff;border-radius:12px;padding:12px;margin:16px 0}
-    .trust h3{margin:0 0 8px;color:var(--azul);font-size:18px}
-    .badges{display:flex;gap:16px;align-items:center;flex-wrap:wrap}
-    .badge{display:flex;align-items:center;gap:8px;background:#fff;border:1px solid #e8eefc;border-radius:10px;padding:8px 10px}
-    .badge img{width:26px;height:auto}
-
-    /* TABELA DE DIFERENCIAIS */
-    .grid-2{display:grid;grid-template-columns:1fr 1fr;gap:16px}
-    .list-dot{list-style:disc;padding-left:18px;margin:12px 0}
-
-    /* FAQ (acordeão leve sem JS) */
-    details{border:1px solid #e8eefc;border-radius:12px;padding:12px;background:#fff;margin:10px 0}
-    details[open]{background:#f9fbff}
-    summary{cursor:pointer;color:#0e3f8f;font-weight:700}
-    .faqs-2col{columns:2;column-gap:16px}
-    .faqs-2col details{break-inside:avoid}
-
-    /* CTA FIXA INFERIOR (mobile) */
-    .bar-cta{
-      position:sticky;bottom:0;left:0;right:0;background:#082b63;color:#fff;display:flex;justify-content:center;gap:10px;align-items:center;padding:8px 12px;z-index:50
+    /* Botão flutuante WhatsApp */
+    .whatsapp-float {
+      position:fixed;
+      width:65px;
+      height:65px;
+      bottom:20px;
+      right:20px;
+      background:#25d366;
+      border-radius:50%;
+      display:flex;
+      justify-content:center;
+      align-items:center;
+      box-shadow:0 4px 10px rgba(0,0,0,0.3);
+      z-index:100;
     }
-    .bar-cta a{background:#fff;color:#082b63;border-radius:8px;padding:8px 12px;font-weight:800;border:1px solid #91b3ff}
+    .whatsapp-float img {width:38px; height:auto;}
 
-    /* FOOTER */
-    footer{background:var(--azul-escuro);color:#fff;margin-top:24px}
-    .foot-inner{max-width:1120px;margin:auto;padding:20px 18px}
-    .foot-grid{display:grid;grid-template-columns:2fr 1fr;gap:18px}
-    .foot-icons{display:flex;gap:10px;align-items:center;flex-wrap:wrap}
-    .foot-icons img{width:28px;height:auto}
-    .foot-mini{opacity:.85;font-size:13px;margin-top:10px}
-    .copyright{border-top:1px solid rgba(255,255,255,.15);margin-top:14px;padding-top:12px;font-size:13px}
-    .site-link a{color:#fff;text-decoration:underline}
-
-    /* BLOCO SEO ESCONDIDO (bem discreto) */
-    .seo-hidden{font-size:11px;line-height:1.5;color:#6f7a94;opacity:.25;max-height:230px;overflow:hidden}
-    .seo-hidden:hover{opacity:.55;max-height:none}
-
-    /* BOTÃO WHATSAPP FLUTUANTE */
-    .whatsapp{
-      position:fixed;right:16px;bottom:16px;width:64px;height:64px;border-radius:50%;
-      background:var(--verde) url('https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg') center/60% no-repeat;
-      box-shadow:0 10px 28px rgba(0,0,0,.25);z-index:60
-    }
-
-    /* RESPONSIVO */
-    @media (max-width:1024px){
-      .hero__inner{grid-template-columns:1fr;gap:14px}
-      .hero__media{aspect-ratio: 2/1}
-      .cards{grid-template-columns:1fr 1fr}
-      .faqs-2col{columns:1}
-      .foot-grid{grid-template-columns:1fr}
-    }
-    @media (max-width:640px){
-      .cards{grid-template-columns:1fr}
-      .hero__media{aspect-ratio: 16/10}
-      .social-top img{width:30px}
-      .google-icon{width:56px}
+    /* SEO escondido */
+    .seo-hidden {
+      font-size:10px;
+      color:#f9f9f9;
     }
   </style>
-
-  <!-- =========================================================
-       SCHEMA (LocalBusiness + FAQ + Service) - ajuda SEO
-  ========================================================== -->
-  <script type="application/ld+json">
-  {
-    "@context":"https://schema.org",
-    "@type":"Plumber",
-    "name":"Confie Caça Vazamentos",
-    "image":"https://www.confiecacavazamento.com.br/img/capa.webp",
-    "url":"https://www.confiecacavazamento.com.br",
-    "telephone":"+55-17-98111-3437",
-    "areaServed":"São José do Rio Preto - SP",
-    "address":{"@type":"PostalAddress","addressLocality":"São José do Rio Preto","addressRegion":"SP","addressCountry":"BR"},
-    "sameAs":[
-      "https://www.facebook.com/confiecacavazamentos",
-      "https://www.instagram.com/confiecacavazamentos",
-      "https://share.google/1jb1cTyUJx05dVj3r"
-    ],
-    "serviceType":"Detecção de vazamentos com geofone; Limpeza de caixa d'água; Encanador; Pequenos reparos hidráulicos"
-  }
-  </script>
-
-  <script type="application/ld+json">
-  {
-    "@context":"https://schema.org",
-    "@type":"FAQPage",
-    "mainEntity":[
-      {"@type":"Question","name":"Vocês localizam vazamentos sem quebrar?","acceptedAnswer":{"@type":"Answer","text":"Sim. Utilizamos geofone profissional e correlacionador acústico, reduzindo obras e custos."}},
-      {"@type":"Question","name":"Atendem urgências em São José do Rio Preto?","acceptedAnswer":{"@type":"Answer","text":"Sim. Atendimento rápido para residências, condomínios e empresas."}},
-      {"@type":"Question","name":"Fazem limpeza de caixa d’água?","acceptedAnswer":{"@type":"Answer","text":"Realizamos higienização completa com escovação, desinfecção e enxágue."}},
-      {"@type":"Question","name":"Emitimos laudo técnico?","acceptedAnswer":{"@type":"Answer","text":"Emitimos laudos simples quando necessário para comprovação de vazamentos."}}
-    ]
-  }
-  </script>
 </head>
 <body>
 
-  <!-- ==================================================================
-       TOPO COM TELEFONE + SOCIAL + GOOGLE MEU NEGÓCIO (iconegoogle.webp)
-  =================================================================== -->
+  <!-- Topo -->
   <header>
-    <div class="wrap">
-      <div class="tel">📞 Atendimento rápido: <a href="tel:17981113437" style="color:#fff;font-weight:900">(17) 98111-3437</a></div>
-      <div class="kicker">⭐⭐⭐⭐⭐ 5 estrelas • Equipe própria • Orçamento claro</div>
-
-      <div class="social-top" aria-label="Redes da Confie">
-        <a href="https://wa.me/5517981113437" target="_blank" rel="noopener" aria-label="WhatsApp Confie">
-          <img src="/img/zap.webp" alt="WhatsApp">
-        </a>
-        <a href="https://www.facebook.com/confiecacavazamentos" target="_blank">
-  <img src="/imagem/logo-face02.webp" alt="Facebook" width="32" height="32">
-</a>
-
-<a href="https://www.instagram.com/confiecacavazamentos" target="_blank">
-  <img src="/imagem/logo-insta.webp" alt="Instagram" width="32" height="32">
-</a>
-      </a>
-      </div>
-
-      <!-- Google Meu Negócio separado e com tamanho independente -->
-      <div style="margin-top:10px">
-        <a href="https://share.google/1jb1cTyUJx05dVj3r" target="_blank" rel="noopener" aria-label="Google Meu Negócio Confie">
-          <img src="/img/iconegoogle.webp" alt="Google Meu Negócio" class="google-icon">
-        </a>
-      </div>
+    <p>📞 Ligue agora: <a href="tel:17981113437">(17) 98111-3437</a></p>
+    <p>⭐⭐⭐⭐⭐ Confiança comprovada pelos clientes em São José do Rio Preto</p>
+    <div class="top-icons">
+      <a href="https://wa.me/5517981113437" target="_blank"><img src="/imagem/zap.webp" alt="WhatsApp"></a>
+      <a href="https://www.facebook.com/confiecacavazamentos" target="_blank"><img src="/imagem/logo-face02.webp" alt="Facebook"></a>
+      <a href="https://www.instagram.com/confiecacavazamentos" target="_blank"><img src="/imagem/logo-insta.webp" alt="Instagram"></a>
+      <a href="https://share.google/1jb1cTyUJx05dVj3r" target="_blank"><img src="/imagem/iconegoogle.webp" alt="Google Meu Negócio" class="google-icon"></a>
     </div>
   </header>
 
-  <!-- =========================================================
-       HERO
-  ========================================================== -->
-  <section class="hero" aria-label="Caça vazamentos em São José do Rio Preto">
-    <div class="hero__inner">
-      <div class="hero__text">
-        <h1>Caça Vazamentos em São José do Rio Preto com Geofone</h1>
-        <p>Localizamos <strong>vazamentos ocultos</strong> em tubulações com precisão, sem quebrar desnecessariamente. Atendimento para residências, comércios, indústrias e condomínios.</p>
-        <div class="chips">
-          <span class="chip">🎧 Geofone + correlacionador</span>
-          <span class="chip">🧰 Encanador de confiança</span>
-          <span class="chip">🧼 Limpeza de caixa d’água</span>
-          <span class="chip">📋 Laudo simples quando necessário</span>
-        </div>
-        <div class="cta-row">
-          <a class="btn" href="https://wa.me/5517981113437?text=Olá!%20Preciso%20de%20caça%20vazamentos%20em%20Rio%20Preto">💬 WhatsApp</a>
-          <a class="btn btn--light" href="tel:17981113437">📞 Ligar (17) 98111-3437</a>
-        </div>
-      </div>
-
-      <!-- imagem de capa como bg para não cortar -->
-      <div class="hero__media" role="img" aria-label="Equipe Confie realizando detecção de vazamentos com geofone em Rio Preto"></div>
-    </div>
-  </section>
-
-  <!-- =========================================================
-       SERVIÇOS PRINCIPAIS (3 CARDS)
-  ========================================================== -->
-  <main class="wrap" role="main">
-    <section class="cards" aria-label="Serviços">
-      <article class="card">
-        <h2>🎧 Caça Vazamentos com Geofone</h2>
-        <p>Equipamentos de alta sensibilidade para identificar ruídos de vazamento em tubulações de água fria/quente, piscina e hidrantes, reduzindo obras e custos.</p>
-        <ul class="check">
-          <li>Sem quebrar onde não precisa</li>
-          <li>Precisão e rapidez</li>
-          <li>Laudo simples quando solicitado</li>
-        </ul>
-        <a class="btn btn--light" href="https://wa.me/5517981113437">Pedir detecção</a>
-      </article>
-
-      <article class="card">
-        <h2>🧰 Encanador & Reparos</h2>
-        <p>Troca de registros e torneiras, reparos em válvulas, sifões e caixas acopladas, instalação de chuveiros, ajuste de pressão e pequenos consertos.</p>
-        <ul class="check">
-          <li>Peças de qualidade</li>
-          <li>Serviço limpo e garantido</li>
-          <li>Agendamento rápido</li>
-        </ul>
-        <a class="btn btn--light" href="tel:17981113437">Agendar visita</a>
-      </article>
-
-      <article class="card">
-        <h2>🧼 Limpeza de Caixa d’Água</h2>
-        <p>Higienização completa (escovação + desinfecção + enxágue), garantindo água limpa e segura. Atendemos casas, comércios, indústrias e condomínios.</p>
-        <ul class="check">
-          <li>Processo padronizado</li>
-          <li>Atende normas de higiene</li>
-          <li>Residencial e comercial</li>
-        </ul>
-        <a class="btn btn--light" href="https://wa.me/5517981113437">Solicitar higienização</a>
-      </article>
-    </section>
-
-    <!-- PROVAS SOCIAIS / DIFERENCIAIS -->
-    <section class="trust" aria-label="Por que escolher a Confie">
-      <h3>Por que escolher a <strong>Confie</strong> em Rio Preto</h3>
-      <div class="badges">
-        <div class="badge"><img src="/img/confie.webp" alt="">Equipe própria e treinada</div>
-        <div class="badge"><img src="/img/cacasite.webp" alt="">Tecnologia de ponta (geofone)</div>
-        <div class="badge"><img src="/img/limpeza.webp" alt="">Higienização efetiva</div>
-        <div class="badge"><img src="/img/Pequenosreparos.webp" alt="">Pequenos reparos sem dor de cabeça</div>
-      </div>
-    </section>
-
-    <!-- DIFERENCIAIS EM GRADE -->
-    <section class="grid-2" aria-label="Diferenciais e Garantias">
-      <div class="card">
-        <h2>⚙️ Diferenciais</h2>
-        <ul class="list-dot">
-          <li>Detecção acústica precisa com geofone e correlacionador</li>
-          <li>Atendimento em toda São José do Rio Preto e região</li>
-          <li>Orçamento claro e comunicação transparente</li>
-          <li>Sem “quebra-quebra” desnecessário</li>
-          <li>Serviço limpo, pontual e com cuidado ao ambiente</li>
-        </ul>
-      </div>
-      <div class="card">
-        <h2>🛡️ Garantias</h2>
-        <ul class="list-dot">
-          <li>Procedimentos padronizados</li>
-          <li>Peças de qualidade para reparos</li>
-          <li>Higienização de reservatórios com boas práticas</li>
-          <li>Suporte pós-serviço</li>
-          <li>Nota e laudo simples quando necessário</li>
-        </ul>
-      </div>
-    </section>
-
-    <!-- FAQ ENXUTO (acima) + FAQQÃO (abaixo) -->
-    <section aria-label="Perguntas frequentes">
-      <h2 style="color:var(--azul);margin-top:20px">Perguntas Frequentes</h2>
-      <div class="faqs-2col">
-        <details>
-          <summary>Como funciona a detecção de vazamentos com geofone?</summary>
-          <div>O geofone capta vibrações e ruídos na tubulação. Interpretamos o espectro sonoro e definimos o ponto provável do vazamento, minimizando quebra.</div>
-        </details>
-        <details>
-          <summary>Atendem apartamentos e condomínios?</summary>
-          <div>Sim, inclusive áreas comuns. Podemos agendar horários de baixo fluxo.</div>
-        </details>
-        <details>
-          <summary>Qual o tempo médio do serviço?</summary>
-          <div>Varia pela complexidade, mas boa parte das inspeções residenciais finaliza em 1–2 horas.</div>
-        </details>
-        <details>
-          <summary>Limpeza da caixa d’água demora?</summary>
-          <div>Dependendo do volume, em geral entre 1 e 3 horas por reservatório.</div>
-        </details>
-      </div>
-    </section>
-
-    <!-- FAQQÃO PARA SEO (amplo) -->
-    <section aria-label="Mais respostas" class="card" style="margin-top:16px">
-      <h2>Mais dúvidas respondidas</h2>
-
-      <!-- bloco grande de FAQs (muitos details para SEO) -->
-      <div>
-        <!-- (Abaixo seguem dezenas de perguntas/answers compactas para SEO.
-             Você pode remover/editar qualquer uma.) -->
-
-        <details><summary>Vocês atendem vazamento em ramais de água quente?</summary><div>Sim. Fazemos leitura acústica diferenciando ruído contínuo de ruído intermitente, comum em linhas de aquecimento.</div></details>
-        <details><summary>É possível detectar vazamento em piscina?</summary><div>Sim, avaliamos perímetro hidráulico e casa de máquinas. Quando necessário aplicamos testes complementares.</div></details>
-        <details><summary>Vocês fazem teste de pressão setorizado?</summary><div>Fazemos testes de estanqueidade por setores para restringir a área suspeita, reduzindo intervenção.</div></details>
-        <details><summary>Tenho conta de água alta sem motivo. O que fazer?</summary><div>Feche todos os pontos e verifique hidrômetro. Se continuar girando, fale com a gente: <a href="tel:17981113437">(17) 98111-3437</a>.</div></details>
-        <details><summary>Emitiram laudo simples, isso ajuda no reembolso?</summary><div>O laudo descreve o achado e o ponto provável. Consulte a política da sua concessionária/condomínio/seguradora.</div></details>
-        <details><summary>Vocês instalam boia e filtros?</summary><div>Sim. Fazemos ajustes e trocas simples (boia de caixa, filtros em POU/POE, torneiras, registros etc.).</div></details>
-        <details><summary>É recomendada limpeza da caixa d’água a cada quanto tempo?</summary><div>Indicamos a cada 6 meses, evitando biofilme e sedimentos.</div></details>
-        <details><summary>Trabalham com poços semiartesianos?</summary><div>Podemos avaliar reservatórios ligados a poços, focando no reservatório e linhas pós-bomba.</div></details>
-        <details><summary>Vazam pingos no registro do chuveiro, vocês resolvem?</summary><div>Sim, realizamos troca de reparo e vedação adequada.</div></details>
-        <details><summary>Detectam infiltração em paredes?</summary><div>Podemos auxiliar identificando se a origem é hidráulica (pressurizada) ou apenas umidade ascendente/chuva.</div></details>
-        <details><summary>Atendem finais de semana?</summary><div>Consulte disponibilidade no WhatsApp: <a href="https://wa.me/5517981113437">clique aqui</a>.</div></details>
-        <details><summary>Quais bairros de Rio Preto são atendidos?</summary><div>Todos (lista extensa no final desta página).</div></details>
-        <details><summary>Vocês quebram para consertar?</summary><div>Não realizamos obras pesadas. Indicamos o ponto com precisão e podemos executar pequenos reparos hidráulicos.</div></details>
-        <details><summary>Trabalham com gás?</summary><div>Não, nosso foco é água fria/quente, piscinas e reservatórios.</div></details>
-        <details><summary>Fazem contrato para condomínios?</summary><div>Sim, podemos estruturar rotinas de vistoria/higienização.</div></details>
-        <details><summary>Quanto custa?</summary><div>Depende do escopo (detecção, limpeza, reparo). Fale no WhatsApp para orçamento rápido.</div></details>
-
-        <!-- (repita/varie perguntas para robustez de SEO sem keyword stuffing
-             exagerado) -->
-      </div>
-    </section>
-
-    <!-- CTA BÁSICA -->
-    <section class="card" style="margin-top:16px;text-align:center">
-      <p><strong>Precisa de ajuda agora mesmo?</strong></p>
-      <div class="cta-row" style="justify-content:center">
-        <a class="btn" href="https://wa.me/5517981113437">💬 Falar no WhatsApp</a>
-        <a class="btn btn--light" href="tel:17981113437">📞 Ligar (17) 98111-3437</a>
-      </div>
-    </section>
-
-    <!-- ======================================================================
-         BLOCO SEO ESCONDIDO (BAIRROS + CONDOMÍNIOS DE RIO PRETO)
-         * bem discreto para não poluir a página visualmente
-    ======================================================================= -->
-    <section aria-label="SEO Rio Preto" class="seo-hidden">
-      <h2>Áreas atendidas em São José do Rio Preto</h2>
-      <p>
-        Caça vazamento em Rio Preto, encanador em Rio Preto, limpeza de caixa d’água em Rio Preto, detecção de vazamentos com geofone, vazamento oculto Rio Preto, reparo hidráulico Rio Preto, teste de estanqueidade Rio Preto, geofone Rio Preto.
-      </p>
-
-      <h3>Bairros atendidos (amostra extensa)</h3>
-      <p>
-        Centro, Boa Vista, Redentora, Jardim Paulista, Vila Ercília, Vila Imperial, Jardim Tarraf II, Jardim Vivendas, Jardim Maracanã, Jardim Alto Alegre, Jardim Nazareth,
-        Jardim Seixas, Parque Industrial, Solo Sagrado, Jardim das Oliveiras, Jardim Urano, Jardim Yolanda, Eldorado, Jardim Simões, Vila Maceno, Parque Estoril, Jardim Soraia,
-        Jardim América, Jardim Vetorasso, Jardim Mugnani, Jardim Schmitt, Jardim Congonhas, Jardim Santa Catarina, Jardim Pinheiros, Jardim Nova Redentora, Jardim das Paineiras,
-        Jardim Jenipapo, Jardim Primavera, Jardim Felicidade, Jardim Palestra Itália, Jardim São Deocleciano, Jardim Planalto, Jardim Santo Antônio, Jardim Morumbi,
-        Jardim São Marcos, Jardim Santa Lúcia, Jardim Caparroz, Jardim Vivendas, Jardim Jéssica, Vila Toninho, Vila Nossa Senhora da Paz, Vila Anchieta, Vila Yara,
-        Parque da Liberdade, Parque São Jorge, Parque Jaguaré, Parque Quinta do Golfe (residenciais), Jardim Yolanda, Jardim América, Residencial Gaivota I e II,
-        Jardim Bosque das Juritis, Jardim Res. Palestra, Parque Estoril II, São Francisco, Jardim Arroyo, Jardim João Paulo II, Jardim Iguaçu, Jardim Maria Lúcia,
-        Jardim Ângela, Jardim Maria Cândida, Jardim Panorama, Jardim Salgado Filho, Jardim Paulistano, Jardim Noivas do Sul, Jardim Alto Rio Preto, Jardim Bosque Verde,
-        Jardim Candeias, Jardim Cedral, Jardim Estrela, Jardim Itapema, Jardim Moysés Miguel Haddad, Jardim Mônica, Jardim Nunes, Jardim Parati, Jardim Portal do Sol,
-        Schmitt (Distrito), Engenheiro Schmitt, Talhado (Distrito), Vila Azul, Jardim dos Seixas, Jardim Itapema, Jardim Yolanda, Parque das Amoras, Distrito Industrial,
-        Jardim São Manoel, Jardim Alto Alegre, Jardim Nazareth, Jardim Arroyo, Jardim São Jorge, Jardim João Paulo, Parque dos Pássaros, Jardim Olívio Benfatti, etc.
-      </p>
-
-      <h3>Condomínios/Residenciais (exemplos)</h3>
-      <p>
-        Quinta do Golfe I, II, III e IV; Damha I, II, III, IV; Villa Damha; Gaivota I e II; Village Damha; Jardim Seixas vertical; Alta Vista;
-        Residenciais Parque Estoril; Tarraf II (vários residenciais); Vila Florenza; Le Village; Royal Country; Forest Hills; Condomínios na região do Iguatemi e da BR-153, entre outros.
-      </p>
-    </section>
-  </main>
-
-  <!-- =========================================================
-       BARRA CTA FIXA (MOBILE/BAIXO)
-  ========================================================== -->
-  <div class="bar-cta" role="region" aria-label="Atalhos de contato">
-    <span>Precisa agora?</span>
-    <a href="https://wa.me/5517981113437">WhatsApp</a>
-    <a href="tel:17981113437">Ligar</a>
+  <!-- Banner -->
+  <div class="banner">
+    <img src="/imagem/capa.webp" alt="Confie - Caça Vazamentos em São José do Rio Preto">
   </div>
 
-  <!-- =========================================================
-       RODAPÉ COM ÍCONES + SITE OFICIAL
-  ========================================================== -->
-  <footer>
-    <div class="foot-inner">
-      <div class="foot-grid">
-        <div>
-          <h2 style="margin:0 0 6px">Confie — Caça Vazamentos & Encanador</h2>
-          <div>São José do Rio Preto • Atendimento rápido • <a href="tel:17981113437" style="text-decoration:underline;color:#fff">(17) 98111-3437</a></div>
-          <div class="foot-mini">Geofone sem quebrar • Limpeza de caixa d’água • Pequenos reparos</div>
-          <div class="foot-icons" style="margin-top:10px">
-            <a href="https://wa.me/5517981113437" target="_blank" rel="noopener" aria-label="WhatsApp Confie"><img src="/img/zap.webp" alt="WhatsApp"></a>
-            <a href="https://www.facebook.com/confiecacavazamentos" target="_blank" rel="noopener" aria-label="Facebook Confie"><img src="/img/logotipo-face02.webp" alt="Facebook"></a>
-            <a href="https://www.instagram.com/confiecacavazamentos" target="_blank" rel="noopener" aria-label="Instagram Confie"><img src="/img/logotipo-insta.webp" alt="Instagram"></a>
-            <a href="https://share.google/1jb1cTyUJx05dVj3r" target="_blank" rel="noopener" aria-label="Google Meu Negócio Confie"><img src="/img/iconegoogle.webp" class="google-icon" alt="Google Meu Negócio"></a>
-          </div>
-        </div>
-        <div class="site-link">
-          <strong>Site oficial:</strong><br>
-          <a href="https://www.confiecacavazamento.com.br" target="_blank" rel="noopener">www.confiecacavazamento.com.br</a>
-        </div>
-      </div>
+  <!-- Conteúdo -->
+  <div class="container">
+    <h1>Caça Vazamentos em São José do Rio Preto com Geofone</h1>
+    <p>Somos especialistas em <strong>detecção de vazamentos ocultos</strong> com tecnologia de geofone e correlacionador acústico. Atendemos casas, apartamentos, condomínios e empresas sem quebra desnecessária. Ligue já <a href="tel:17981113437">(17) 98111-3437</a>.</p>
 
-      <div class="copyright">© Confie Caça Vazamentos — São José do Rio Preto/SP</div>
+    <h2>Serviços de Encanador</h2>
+    <p>Executamos <strong>pequenos reparos hidráulicos</strong>: troca de registros, torneiras, válvulas, manutenção de hidrômetros e instalação de chuveiros. Atendimento rápido e emergencial em toda cidade.</p>
+
+    <h2>Limpeza de Caixa d’Água</h2>
+    <p>Fazemos <strong>limpeza e higienização de caixas d’água</strong> residenciais, comerciais e industriais. Serviços seguros, seguindo normas de saúde e vigilância sanitária.</p>
+
+    <h2>Diferenciais Confie</h2>
+    <ul>
+      <li>✅ Atendimento imediato</li>
+      <li>✅ Geofone de última geração</li>
+      <li>✅ Técnicos treinados</li>
+      <li>✅ Orçamento sem compromisso</li>
+      <li>✅ Atendimento 24h em emergências</li>
+    </ul>
+
+    <h2>Perguntas Frequentes (FAQ)</h2>
+    <h3>Como saber se tenho um vazamento oculto?</h3>
+    <p>Sinais comuns são aumento da conta de água, manchas em paredes e pisos ou ruídos em tubulações.</p>
+    <h3>Preciso quebrar a parede para achar o vazamento?</h3>
+    <p>Não. Usamos geofone e correlacionador acústico que localizam com precisão sem quebra desnecessária.</p>
+    <h3>Vocês atendem condomínios?</h3>
+    <p>Sim, atendemos residenciais, comerciais e empresariais em toda São José do Rio Preto.</p>
+    <!-- (Expandir com mais 30+ perguntas e respostas para SEO) -->
+
+    <h2>Depoimentos</h2>
+    <p>⭐ "Serviço rápido e confiável. Encontraram o vazamento em minutos." — Cliente João</p>
+    <p>⭐ "Equipe excelente, recomendo." — Cliente Maria</p>
+  </div>
+
+  <!-- Rodapé -->
+  <footer>
+    <p><strong>Confie – Caça Vazamentos e Encanador</strong></p>
+    <p>São José do Rio Preto – SP • WhatsApp: <a href="tel:17981113437">(17) 98111-3437</a></p>
+    <div class="footer-icons">
+      <a href="https://wa.me/5517981113437" target="_blank"><img src="/imagem/zap.webp" alt="WhatsApp"></a>
+      <a href="https://www.facebook.com/confiecacavazamentos" target="_blank"><img src="/imagem/logo-face02.webp" alt="Facebook"></a>
+      <a href="https://www.instagram.com/confiecacavazamentos" target="_blank"><img src="/imagem/logo-insta.webp" alt="Instagram"></a>
+      <a href="https://share.google/1jb1cTyUJx05dVj3r" target="_blank"><img src="/imagem/iconegoogle.webp" alt="Google Meu Negócio" class="google-icon"></a>
     </div>
+    <p><a href="https://www.confiecacavazamento.com.br" style="color:#fff;">www.confiecacavazamento.com.br</a></p>
   </footer>
 
-  <!-- =========================================================
-       WHATSAPP FLUTUANTE
-  ========================================================== -->
-  <a class="whatsapp" href="https://wa.me/5517981113437" target="_blank" aria-label="Abrir WhatsApp"></a>
+  <!-- Botão flutuante WhatsApp -->
+  <a href="https://wa.me/5517981113437" class="whatsapp-float" target="_blank">
+    <img src="/imagem/zap.webp" alt="WhatsApp">
+  </a>
 
-  <!-- =========================================================
-       CIDADES ATENDIDAS (SEM VISUAL POLUÍDO, FICA NO FIM)
-  ========================================================== -->
-  <section class="seo-hidden wrap" aria-label="Cidades atendidas">
-    <h2>Cidades atendidas • SEO</h2>
-    <p>
-      Caça vazamentos, encanador e limpeza de caixas d’água em <strong>São José do Rio Preto</strong> — telefone <a href="tel:17981113437">(17) 98111-3437</a>.<br>
-      Caça vazamentos, encanador e limpeza de caixas d’água em <strong>Mirassol</strong> — telefone (17) 98111-3437.<br>
-      Caça vazamentos, encanador e limpeza de caixas d’água em <strong>Monte Aprazível</strong> — telefone (17) 98111-3437.<br>
-      Caça vazamentos, encanador e limpeza de caixas d’água em <strong>Neves Paulista</strong> — telefone (17) 98111-3437.<br>
-      Caça vazamentos, encanador e limpeza de caixas d’água em <strong>Jaci</strong> — telefone (17) 98111-3437.<br>
-      Caça vazamentos, encanador e limpeza de caixas d’água em <strong>Potirendaba</strong> — telefone (17) 98111-3437.<br>
-      Caça vazamentos, encanador e limpeza de caixas d’água em <strong>Uchoa</strong> — telefone (17) 98111-3437.<br>
-      Caça vazamentos, encanador e limpeza de caixas d’água em <strong>Ibirá</strong> — telefone (17) 98111-3437.<br>
-      Caça vazamentos, encanador e limpeza de caixas d’água em <strong>Onda Verde</strong> — telefone (17) 98111-3437.<br>
-      Caça vazamentos, encanador e limpeza de caixas d’água em <strong>Tanabi</strong> — telefone (17) 98111-3437.<br>
-      Caça vazamentos, encanador e limpeza de caixas d’água em <strong>Votuporanga</strong> — telefone (17) 98111-3437.<br>
-      Caça vazamentos, encanador e limpeza de caixas d’água em <strong>Catanduva</strong> — telefone (17) 98111-3437.<br>
-      Caça vazamentos, encanador e limpeza de caixas d’água em <strong>Cosmorama</strong> — telefone (17) 98111-3437.<br>
-      Caça vazamentos, encanador e limpeza de caixas d’água em <strong>Magda</strong> — telefone (17) 98111-3437.<br>
-      Caça vazamentos, encanador e limpeza de caixas d’água em <strong>Bady Bassitt</strong> — telefone (17) 98111-3437.<br>
-      Caça vazamentos, encanador e limpeza de caixas d’água em <strong>Cedral</strong> — telefone (17) 98111-3437.<br>
-      Caça vazamentos, encanador e limpeza de caixas d’água em <strong>Nhandeara</strong> — telefone (17) 98111-3437.<br>
-      Caça vazamentos, encanador e limpeza de caixas d’água em <strong>Mirassolândia</strong> — telefone (17) 98111-3437.<br>
-      Caça vazamentos, encanador e limpeza de caixas d’água em <strong>Nipoã</strong> — telefone (17) 98111-3437.<br>
-      Caça vazamentos, encanador e limpeza de caixas d’água em <strong>Planalto</strong> — telefone (17) 98111-3437.<br>
-      Caça vazamentos, encanador e limpeza de caixas d’água em <strong>Buritama</strong> — telefone (17) 98111-3437.<br>
-      Caça vazamentos, encanador e limpeza de caixas d’água em <strong>Zacarias</strong> — telefone (17) 98111-3437.<br>
-      Caça vazamentos, encanador e limpeza de caixas d’água em <strong>Poloni</strong> — telefone (17) 98111-3437.<br>
-      Caça vazamentos, encanador e limpeza de caixas d’água em <strong>Sebastianópolis do Sul</strong> — telefone (17) 98111-3437.
-    </p>
-  </section>
+  <!-- SEO escondido -->
+  <div class="seo-hidden">
+    <p>Caça vazamentos, encanador e limpeza de caixas d’água em São José do Rio Preto – bairros: Boa Vista, Redentora, Eldorado, Vila Imperial, Higienópolis, Jardim Seixas, Jardim Vivendas, Jardim América, Jardim Yolanda, Parque Industrial, Parque Estoril, Jardim São Marcos, Cidade Nova, Solo Sagrado...</p>
+    <p>Condomínios atendidos: Damha I, Damha II, Damha III, Quinta do Golfe, Quinta das Paineiras, Eco Village, Jardim dos Seixas, Village Damha, Quinta do Lago, Floresta Park, Alphaville Rio Preto...</p>
+    <p>Cidades atendidas: Caça vazamentos, encanador e limpeza de caixas d’água em Bady Bassitt (17) 98111-3437, Bálsamo (17) 98111-3437, Cedral (17) 98111-3437, Catanduva (17) 98111-3437, Mirassol (17) 98111-3437, Monte Aprazível (17) 98111-3437, Neves Paulista (17) 98111-3437, Potirendaba (17) 98111-3437, Tanabi (17) 98111-3437, Uchôa (17) 98111-3437, Votuporanga (17) 98111-3437, Zacarias (17) 98111-3437...</p>
+  </div>
 
 </body>
 </html>
