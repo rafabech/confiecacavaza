@@ -18,7 +18,11 @@
     .topbar a{color:#fff;font-weight:800}
     .social{display:flex;gap:14px;align-items:center;justify-content:center;margin-top:6px}
     .social img{width:34px;height:34px;object-fit:contain}
-    .social .google{width:54px}
+    ..social .google{
+  width:40px;   /* ajuste proporcional */
+  height:40px;  /* mantém quadrado */
+  object-fit:contain;
+}
     .hero__media{display:block;margin:0 auto;max-width:100%;width:100%;height:clamp(220px,38vw,380px);object-fit:contain}
     .btn{display:inline-block;padding:12px 18px;margin:6px;border-radius:10px;border:1px solid var(--azul);font-weight:800}
     .btn{background:var(--azul);color:#fff}.btn.alt{background:#fff;color:var(--azul)}
