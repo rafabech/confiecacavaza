@@ -56,7 +56,7 @@
     .hero__img{
       width:100%;
       max-height:460px;
-      object-fit:contain;  /* NÃO CORTA no desktop */
+      object-fit:contain;  /* NÃO CORTA */
       background:#ddecff;
     }
     @media(max-width:640px){
@@ -77,9 +77,11 @@
     .mini{font-size:13px;color:#4d5a6e}
     .muted{color:#566379}
 
-    /* KPIs */
+    /* KPIs e depoimentos */
     .kpis{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px;margin:18px 0}
     .kpi{background:#fff;border-radius:12px;padding:14px;text-align:center;box-shadow:0 6px 16px rgba(0,0,0,.06)}
+    .testimonials{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:16px;margin:18px 0}
+    .testimonial{background:#fff;border-left:4px solid var(--verde);border-radius:8px;padding:14px;box-shadow:0 6px 16px rgba(0,0,0,.06);font-size:15px}
 
     /* FAQ */
     .faq details{background:#fff;border-radius:10px;padding:12px;margin:8px 0;box-shadow:0 6px 18px rgba(0,0,0,.06)}
@@ -247,7 +249,14 @@
       <p>Desconfie se sua <strong>conta de água</strong> subiu sem motivo, se o <strong>hidrômetro gira</strong> com tudo desligado, ou se há <strong>manchas de umidade</strong>. Nessas situações, fale com a Confie: <a href="tel:17981113437">(17) 98111-3437</a>.</p>
     </section>
 
-    <!-- FAQ - GERAL (muitas perguntas) -->
+    <!-- DEPOIMENTOS CURTOS -->
+    <section class="testimonials" aria-label="Depoimentos de clientes">
+      <div class="testimonial">“Atendimento rápido e sem quebradeira. Encontraram o vazamento com precisão.” — <em>Marcos, Jardim Seixas</em></div>
+      <div class="testimonial">“Minha conta de água caiu pela metade depois do serviço. Valeu a pena.” — <em>Patrícia, Redentora</em></div>
+      <div class="testimonial">“Limpeza da caixa d’água muito bem feita, com laudo.” — <em>Cláudia, Damha</em></div>
+    </section>
+
+    <!-- FAQ - GERAL -->
     <section class="faq" aria-label="Perguntas frequentes - Geral">
       <h2>Perguntas Frequentes</h2>
 
@@ -278,6 +287,10 @@
       <details><summary>Podem verificar infiltrações?</summary><p>Sim, avaliamos o sistema hidráulico e indicamos a origem provável para reparo.</p></details>
       <details><summary>Trabalham com ramais subterrâneos?</summary><p>Sim, avaliamos redes externas e internas.</p></details>
       <details><summary>Conseguem indicar o ponto exato de quebra?</summary><p>O objetivo é localizar com precisão para intervenção mínima.</p></details>
+      <details><summary>Fazem teste setorial fechando apenas alguns registros?</summary><p>Sim, setorizamos por blocos/banheiros/ramais para isolar a área suspeita.</p></details>
+      <details><summary>Atendem tubulação de cobre e ferro fundido?</summary><p>Sim, as técnicas são ajustadas ao material e idade da tubulação.</p></details>
+      <details><summary>Vazamento pode estar no cavalete/hidrômetro?</summary><p>Pode. Fazemos inspeção do cavalete, conexões e vedação, além de testes de rotação do hidrômetro.</p></details>
+      <details><summary>Pressurizador interfere na detecção?</summary><p>Podemos desligar/isolá-lo durante o exame para leitura correta do ruído.</p></details>
     </section>
 
     <!-- FAQ - LIMPEZA DE CAIXA D’ÁGUA -->
@@ -288,6 +301,9 @@
       <details><summary>Atendem reservatórios grandes?</summary><p>Sim, caixas residenciais e reservatórios de maior porte.</p></details>
       <details><summary>É preciso esvaziar a caixa?</summary><p>Sim, o processo envolve esvaziamento, escovação, desinfecção e enxágue.</p></details>
       <details><summary>Tempo médio do serviço?</summary><p>Varia conforme o volume e o acesso. Informamos no orçamento.</p></details>
+      <details><summary>Vocês higienizam caixa d’água de condomínio?</summary><p>Sim. Trabalhamos em caixas elevadas e subterrâneas, seguindo boas práticas.</p></details>
+      <details><summary>Há risco de contaminação se não limpar?</summary><p>Sim, pode haver lodo, sedimentos e microrganismos. Por isso a limpeza é essencial.</p></details>
+      <details><summary>É necessário fechar o registro da rua?</summary><p>Em geral sim, para esvaziar e higienizar corretamente sem reposição imediata.</p></details>
     </section>
 
     <!-- BLOCO SEO DISCRETO: BAIRROS E CONDOMÍNIOS -->
@@ -300,16 +316,17 @@
         Vila Aurora, Estância Jockey Club, Nova Redentora, Jardim Maracanã, Jardim Yolanda, Jardim Primavera,
         Jardim Soraya, Jardim Tarraf II, Jardim Morumbi, Jardim América, Jardim Alto Rio Preto, Jardim Urano,
         Residencial Gabriela, Vila Maceno, Vila Imperatriz, Parque da Liberdade, Jardim Simões, Parque Estoril,
-        Jardim Vivendas, Parque da Cidadania, Jardim Congonhas, Jardim Marajó, Distrito Industrial, Jardim Arroyo II.
+        Jardim Vivendas, Parque da Cidadania, Jardim Congonhas, Jardim Marajó, Distrito Industrial, Jardim Arroyo II,
+        Jardim San Remo, Jardim Bosque, Parque Vila Nobre, Parque Estoril II, Jardim Nazareth II, Nova Redentora II.
         <br>
         <strong>Condomínios:</strong> Damha I, Damha II, Damha III, Damha IV, Damha V, Buona Vita, Village Rio Preto, Alphaville Rio Preto,
         Residencial Gaivota I, Gaivota II, Eco Village, Condomínio Quinta do Golfe, Parque Residencial Green Valley,
         Condomínio Villagio, Parque dos Sabiás, Condomínio Vivendas, Jardim Sul, Condomínio Jardim dos Seixas,
-        Condomínio Reserva, Nova Aliança (região), Condomínios em expansão na zona sul.
+        Condomínio Reserva, Nova Aliança (região), Quinta do Ipê, Jardim Sul IV, Residencial Village Santa Helena.
       </div>
     </section>
 
-    <!-- CTA FORTES -->
+    <!-- CTA FORTE -->
     <section class="card" aria-label="Chamada para ação">
       <h2>Fale agora com a Confie</h2>
       <p>Precisa de ajuda com vazamento oculto, reparo hidráulico ou limpeza de caixa d’água? Ligue <strong><a href="tel:17981113437">(17) 98111-3437</a></strong> ou chame no <a href="https://wa.me/5517981113437" target="_blank" rel="noopener">WhatsApp</a>. Atendimento em toda São José do Rio Preto.</p>
