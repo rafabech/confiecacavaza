@@ -3,53 +3,28 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Confie Caça Vazamentos | Prévia Ajustada</title>
+  <title>Confie Caça Vazamentos | Landing Completa</title>
   <link rel="icon" href="/img/gota.webp" type="image/webp">
   <style>
-    body { margin:0; font-family: 'Segoe UI', Arial, sans-serif; color:#222; }
-    header {
-      background:#004080; color:#fff; padding:12px 20px;
-      display:flex; justify-content:space-between; align-items:center;
-      position:sticky; top:0; z-index:1000; flex-wrap:wrap;
-    }
+    body { margin:0; font-family: 'Segoe UI', Arial, sans-serif; line-height:1.6; color:#222; }
+    header { background:#004080; color:#fff; padding:12px 20px; display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; }
     header h1 { font-size:18px; margin:0; }
-    header .right { display:flex; align-items:center; gap:15px; flex-wrap:wrap; }
     header a.tel { color:#fff; font-weight:bold; text-decoration:none; }
-    header .icons a img { width:24px; height:24px; object-fit:contain; }
-    .hero {
-      text-align:center; padding:40px 20px;
-    }
-    .hero img {
-      max-width:100%; height:auto; border-radius:10px;
-    }
+    header .icons a svg { width:24px; height:24px; fill:#fff; }
+    .hero { text-align:center; padding:40px 20px; background:#f8f9fa; }
+    .hero img { max-width:100%; height:auto; border-radius:10px; }
     .hero h2 { font-size:26px; margin:20px 0 10px; color:#004080; }
-    .hero p { font-size:18px; margin-bottom:20px; max-width:600px; margin-left:auto; margin-right:auto; }
-    .btn {
-      display:inline-block; padding:14px 24px; border-radius:6px; font-weight:bold; text-decoration:none;
-    }
+    .hero p { font-size:18px; margin-bottom:20px; max-width:700px; margin:auto; }
+    .btn { display:inline-block; padding:14px 24px; border-radius:6px; font-weight:bold; text-decoration:none; }
     .btn-primary { background:#25d366; color:#fff; }
-    section { padding:60px 20px; max-width:1200px; margin:auto; }
-    h3 { font-size:26px; margin-bottom:30px; text-align:center; color:#004080; }
-    .grid-3 {
-      display:grid; grid-template-columns:repeat(auto-fit,minmax(280px,1fr)); gap:20px;
-    }
-    .card {
-      border:1px solid #ddd; border-radius:10px; overflow:hidden;
-      box-shadow:0 4px 10px rgba(0,0,0,0.08); background:#fff;
-      transition:transform 0.2s;
-    }
-    .card:hover { transform:translateY(-5px); }
-    .card img { width:100%; height:200px; object-fit:cover; }
-    .card h4 { margin:15px; font-size:20px; color:#004080; }
-    .card p { margin:0 15px 20px; font-size:15px; color:#444; }
-    .zap {
-      position:fixed; bottom:20px; right:20px;
-    }
-    .zap a {
-      background:#25d366; color:#fff; padding:14px 20px;
-      border-radius:50px; text-decoration:none; font-weight:bold;
-      box-shadow:0 4px 6px rgba(0,0,0,0.2);
-    }
+    section { padding:50px 20px; max-width:1100px; margin:auto; }
+    h3 { font-size:26px; margin-bottom:20px; text-align:center; color:#004080; }
+    .card { margin-bottom:40px; }
+    .card img { width:100%; height:auto; border-radius:8px; margin-bottom:15px; }
+    .zap { position:fixed; bottom:20px; right:20px; }
+    .zap a { background:#25d366; color:#fff; padding:14px 20px; border-radius:50px; text-decoration:none; font-weight:bold; box-shadow:0 4px 6px rgba(0,0,0,0.2); }
+    footer { background:#111; color:#ddd; padding:30px 20px; text-align:center; }
+    footer a { color:#25d366; }
   </style>
 </head>
 <body>
@@ -59,10 +34,14 @@
   <div class="right">
     <a href="tel:+5517981113437" class="tel">(17) 98111-3437</a>
     <div class="icons">
-      <a href="https://wa.me/5517981113437" target="_blank"><img src="/img/logo-face02.webp" alt="WhatsApp"></a>
-      <a href="https://www.facebook.com/" target="_blank"><img src="/img/logo-face02.webp" alt="Facebook"></a>
-      <a href="https://www.instagram.com/" target="_blank"><img src="/img/logo-insta.webp" alt="Instagram"></a>
-      <a href="https://share.google/YUwmFMYd8rQAIERG8" target="_blank"><img src="/img/google5estrelasfundoazul.png" alt="Google Meu Negócio"></a>
+      <!-- WhatsApp Icon -->
+      <a href="https://wa.me/5517981113437" target="_blank"><svg viewBox="0 0 32 32"><circle cx="16" cy="16" r="16" fill="#25d366"/></svg></a>
+      <!-- Facebook Icon -->
+      <a href="https://www.facebook.com/" target="_blank"><svg viewBox="0 0 24 24"><path d="M22 12a10 10 0 1 0-11.5 9.9v-7h-2v-3h2v-2.3c0-2 1.2-3.1 3-3.1.9 0 1.8.1 1.8.1v2h-1c-1 0-1.3.6-1.3 1.2V12h2.3l-.4 3h-1.9v7A10 10 0 0 0 22 12"></path></svg></a>
+      <!-- Instagram Icon -->
+      <a href="https://www.instagram.com/" target="_blank"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10" stroke="#fff" fill="none"/><circle cx="12" cy="12" r="4" fill="#fff"/></svg></a>
+      <!-- Google Icon -->
+      <a href="https://share.google/YUwmFMYd8rQAIERG8" target="_blank"><svg viewBox="0 0 488 512"><circle cx="244" cy="244" r="200" fill="#fff"/></svg></a>
     </div>
   </div>
 </header>
@@ -75,25 +54,40 @@
 </section>
 
 <section>
-  <h3>Nossos Serviços</h3>
-  <div class="grid-3">
-    <div class="card">
-      <img src="/img/cacasite.webp" alt="Caça vazamentos">
-      <h4>Caça Vazamentos</h4>
-      <p>Detectamos vazamentos ocultos com geofone de alta precisão, sem quebrar pisos e paredes.</p>
-    </div>
-    <div class="card">
-      <img src="/img/Pequenosreparos.webp" alt="Pequenos reparos">
-      <h4>Pequenos Reparos</h4>
-      <p>Troca de registros, boias, sifões e válvulas. Encanador de confiança para serviços rápidos.</p>
-    </div>
-    <div class="card">
-      <img src="/img/limpeza.webp" alt="Limpeza de caixa d’água">
-      <h4>Limpeza de Caixa d’Água</h4>
-      <p>Higienização completa com desinfecção e emissão de comprovante. Segurança para sua família.</p>
-    </div>
+  <h3>Caça Vazamentos</h3>
+  <div class="card">
+    <img src="/img/cacasite.webp" alt="Caça vazamentos">
+    <p>Texto longo sobre Caça Vazamentos (500 palavras)...</p>
   </div>
 </section>
+
+<section>
+  <h3>Pequenos Reparos</h3>
+  <div class="card">
+    <img src="/img/Pequenosreparos.webp" alt="Pequenos reparos">
+    <p>Texto longo sobre Pequenos Reparos (500 palavras)...</p>
+  </div>
+</section>
+
+<section>
+  <h3>Limpeza de Caixa d’Água</h3>
+  <div class="card">
+    <img src="/img/limpeza.webp" alt="Limpeza de caixa d’água">
+    <p>Texto longo sobre Limpeza de Caixa d’Água (500 palavras)...</p>
+  </div>
+</section>
+
+<section>
+  <h3>Teste de Pressão e Laudo Técnico</h3>
+  <div class="card">
+    <img src="/img/capa.webp" alt="Teste de pressão e laudo técnico">
+    <p>Texto longo sobre Teste de Pressão e Laudo Técnico (500 palavras)...</p>
+  </div>
+</section>
+
+<footer>
+  <p>© 2025 Confie Caça Vazamentos • (17) 98111-3437</p>
+</footer>
 
 <div class="zap">
   <a href="https://wa.me/5517981113437">WhatsApp (17) 98111-3437</a>
