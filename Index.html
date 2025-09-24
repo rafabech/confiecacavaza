@@ -3,122 +3,211 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Confie Caça Vazamentos | Landing Page</title>
+  <title>Confie Caça Vazamentos | Geofone sem quebrar em Rio Preto e Região</title>
+  <meta name="description" content="Confie Caça Vazamentos: geofone sem quebrar, teste de pressão e laudo, pequenos reparos e limpeza de caixa d’água. Atendemos São José do Rio Preto e cidades da região. WhatsApp (17) 98111-3437.">
+  <meta name="keywords" content="caça vazamentos, geofone, vazamento sem quebrar, teste de pressão, laudo técnico, limpeza de caixa d’água, encanador, São José do Rio Preto, Mirassol, Monte Aprazível, Catanduva, Votuporanga">
+  <link rel="canonical" href="https://confiecacavazamentos.com.br/">
   <link rel="icon" href="/img/gota.webp" type="image/webp">
   <style>
-    body { margin:0; font-family:'Segoe UI',Arial,sans-serif; color:#222; line-height:1.6; }
-    header { background:#004080; color:#fff; padding:12px 20px; display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; }
-    header h1 { font-size:18px; margin:0; }
-    header a.tel { color:#fff; font-weight:bold; text-decoration:none; }
-    header .icons a svg { width:24px; height:24px; }
-    .hero { text-align:center; padding:40px 20px; background:#f8f9fa; }
-    .hero img { max-width:100%; height:auto; border-radius:10px; }
-    .hero h2 { font-size:26px; margin:20px 0 10px; color:#004080; }
-    .hero p { font-size:18px; margin-bottom:20px; max-width:700px; margin:auto; }
-    .btn { display:inline-block; padding:14px 24px; border-radius:6px; font-weight:bold; text-decoration:none; }
-    .btn-primary { background:#25d366; color:#fff; }
-    section { padding:50px 20px; max-width:1100px; margin:auto; }
-    h3 { font-size:26px; margin-bottom:20px; text-align:center; color:#004080; }
-    .card { margin-bottom:40px; }
-    .card img { width:100%; height:auto; border-radius:8px; margin-bottom:15px; }
-    .zap { position:fixed; bottom:20px; right:20px; }
-    .zap a { background:#25d366; color:#fff; padding:14px 20px; border-radius:50px; text-decoration:none; font-weight:bold; box-shadow:0 4px 6px rgba(0,0,0,0.2); }
-    footer { background:#111; color:#ddd; padding:30px 20px; text-align:center; }
-    footer a { color:#25d366; }
+    :root {
+      --azul:#0b4aa2; --azul-escuro:#083679; --verde:#25d366;
+      --borda:#e5e7eb; --texto:#1f2937; --cinza:#f8fafc;
+    }
+    * { box-sizing:border-box }
+    body { margin:0; font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; color:var(--texto); line-height:1.65; background:#fff; }
+    a { color:var(--azul-escuro); text-decoration:none }
+    a:hover { text-decoration:underline }
+    /* Header */
+    header {
+      position:sticky; top:0; z-index:50; background:#fff;
+      border-bottom:1px solid var(--borda);
+    }
+    .topbar {
+      max-width:1180px; margin:auto; padding:10px 16px;
+      display:flex; align-items:center; justify-content:space-between; gap:12px; flex-wrap:wrap;
+    }
+    .brand { display:flex; align-items:center; gap:10px }
+    .brand img { width:36px; height:36px }
+    .brand h1 { font-size:18px; margin:0; color:var(--azul-escuro) }
+    .right { display:flex; align-items:center; gap:14px; flex-wrap:wrap }
+    .tel { font-weight:800; background:var(--azul); color:#fff; padding:8px 12px; border-radius:8px }
+    .icons { display:flex; align-items:center; gap:10px }
+    .icons a svg { width:22px; height:22px; display:block }
+    /* Hero */
+    .hero { background:linear-gradient(180deg,#f8fbff,#fff); }
+    .hero-inner { max-width:1180px; margin:auto; padding:24px 16px; display:grid; grid-template-columns:1.1fr .9fr; gap:20px; align-items:center }
+    @media (max-width:900px) { .hero-inner { grid-template-columns:1fr } }
+    .hero h2 { margin:0 0 8px; font-size:28px; color:#0f172a }
+    .hero p.lead { margin:0 0 14px; font-size:18px; color:#334155 }
+    .hero img { width:100%; height:auto; border-radius:14px; display:block }
+    .cta { display:flex; gap:12px; flex-wrap:wrap; margin-top:10px }
+    .btn { display:inline-flex; align-items:center; gap:10px; font-weight:800; padding:12px 16px; border-radius:12px }
+    .btn.primary { background:var(--verde); color:#0a0a0a }
+    .btn.secondary { background:#fff; border:1px solid var(--borda) }
+    /* Sections */
+    section { padding:26px 0 }
+    .container { max-width:1180px; margin:auto; padding:0 16px }
+    h3.section-title { font-size:24px; margin:0 0 12px; color:#0f172a }
+    .card { background:#fff; border:1px solid var(--borda); border-radius:14px; padding:16px }
+    .service-media { max-width:520px; margin:0 auto 14px auto }
+    .service-media img { max-width:520px; width:100%; height:auto; display:block; border-radius:12px }
+    .cols { columns:2; column-gap:22px }
+    @media (max-width:900px) { .cols { columns:1 } }
+    .cities { display:flex; flex-wrap:wrap; gap:10px }
+    .city { border:1px solid var(--borda); border-radius:10px; padding:8px 12px; background:#fff }
+    /* Footer & WhatsApp */
+    footer { background:#0b1220; color:#cbd5e1; margin-top:24px }
+    .foot { max-width:1180px; margin:auto; padding:18px 16px; display:flex; justify-content:space-between; gap:10px; flex-wrap:wrap }
+    .zap { position:fixed; right:16px; bottom:16px; z-index:60 }
+    .zap a { display:inline-flex; align-items:center; gap:10px; background:var(--verde); color:#001b06; font-weight:900; padding:14px 16px; border-radius:999px }
+    /* Hidden keywords */
+    .seo-hidden { display:none }
   </style>
 </head>
 <body>
 
 <header>
-  <h1>Confie Caça Vazamentos</h1>
-  <div class="right">
-    <a href="tel:+5517981113437" class="tel">(17) 98111-3437</a>
-    <div class="icons">
-      <!-- WhatsApp -->
-      <a href="https://wa.me/5517981113437" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="#25d366" d="M380.9 97.1C339-6.1 222.2-31.3 133.6 22.6 44.9 76.5 19.7 193.3 73.6 282l-39.3 144.2L180.5 380c87.9 45.6 196.1 20.6 249.9-68.1 53.9-88.7 29-205.5-49.5-258.8z"/></svg></a>
-      <!-- Facebook -->
-      <a href="https://www.facebook.com/" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path fill="#1877F2" d="M279.14 288l14.22-92.66h-88.91V127.78c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S293.3 0 262.06 0c-73.14 0-121.07 44.38-121.07 124.72v70.62H86.41V288h54.58v224h100.2V288z"/></svg></a>
-      <!-- Instagram -->
-      <a href="https://www.instagram.com/" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="#C13584" d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.2 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.5 74.7-74.7 74.7z"/><path fill="#C13584" d="M370.5 96.1c0 14.9-12 26.9-26.9 26.9-14.9 0-26.9-12-26.9-26.9s12-26.9 26.9-26.9 26.9 12 26.9 26.9z"/><path fill="#C13584" d="M224.1 0C100.3 0 0 100.3 0 224.1s100.3 224.1 224.1 224.1S448 347.9 448 224.1 347.9 0 224.1 0z"/></svg></a>
-      <!-- Google -->
-      <a href="https://share.google/YUwmFMYd8rQAIERG8" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 488 512"><path fill="#4285F4" d="M488 261.8c0-17.8-1.6-35.7-5-53H249v100h134c-6 32-24 59-51 77v64h82c48-44 74-109 74-188z"/><path fill="#34A853" d="M249 492c67 0 123-22 164-59l-82-64c-23 16-52 26-82 26-63 0-116-42-135-99H31v62c41 81 125 134 218 134z"/><path fill="#FBBC05" d="M114 296c-4-12-7-25-7-38s3-26 7-38v-62H31c-17 33-27 71-27 112s10 79 27 112l83-62z"/><path fill="#EA4335" d="M249 97c35 0 67 12 91 36l68-68C364 23 308 0 249 0 156 0 72 53 31 134l83 62c19-57 72-91 135-91z"/></svg></a>
+  <div class="topbar">
+    <div class="brand">
+      <img src="/img/gota.webp" alt="Confie Caça Vazamentos - gota (favicon)">
+      <h1>Confie Caça Vazamentos</h1>
+    </div>
+    <div class="right">
+      <a class="tel" href="tel:+5517981113437">(17) 98111-3437</a>
+      <div class="icons">
+        <!-- WhatsApp -->
+        <a href="https://wa.me/5517981113437" target="_blank" rel="noopener" aria-label="WhatsApp">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="#25d366" d="M380.9 97.1C339-6.1 222.2-31.3 133.6 22.6 44.9 76.5 19.7 193.3 73.6 282l-39.3 144.2L180.5 380c87.9 45.6 196.1 20.6 249.9-68.1 53.9-88.7 29-205.5-49.5-258.8z"/></svg>
+        </a>
+        <!-- Google Meu Negócio -->
+        <a href="https://share.google/YUwmFMYd8rQAIERG8" target="_blank" rel="noopener" aria-label="Google Meu Negócio">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 488 512">
+            <path fill="#4285F4" d="M488 261.8c0-17.8-1.6-35.7-5-53H249v100h134c-6 32-24 59-51 77v64h82c48-44 74-109 74-188z"/>
+            <path fill="#34A853" d="M249 492c67 0 123-22 164-59l-82-64c-23 16-52 26-82 26-63 0-116-42-135-99H31v62c41 81 125 134 218 134z"/>
+            <path fill="#FBBC05" d="M114 296c-4-12-7-25-7-38s3-26 7-38v-62H31c-17 33-27 71-27 112s10 79 27 112l83-62z"/>
+            <path fill="#EA4335" d="M249 97c35 0 67 12 91 36l68-68C364 23 308 0 249 0 156 0 72 53 31 134l83 62c19-57 72-99 135-99z"/>
+          </svg>
+        </a>
+        <!-- Instagram -->
+        <a href="https://www.instagram.com/confiecacavazamentos" target="_blank" rel="noopener" aria-label="Instagram">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+            <path fill="#C13584" d="M224 202a54 54 0 1 0 0 108 54 54 0 0 0 0-108zm124-38a22 22 0 1 0 0-44 22 22 0 0 0 0 44z"/>
+            <path fill="#C13584" d="M314 32H134C74 32 26 80 26 140v180c0 60 48 108 108 108h180c60 0 108-48 108-108V140c0-60-48-108-108-108zm68 288c0 37-31 68-68 68H134c-37 0-68-31-68-68V140c0-37 31-68 68-68h180c37 0 68 31 68 68z"/>
+          </svg>
+        </a>
+        <!-- Facebook -->
+        <a href="https://web.facebook.com/confiecacavazamentos" target="_blank" rel="noopener" aria-label="Facebook">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path fill="#1877F2" d="M279.14 288l14.22-92.66h-88.91V127.78c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S293.3 0 262.06 0c-73.14 0-121.07 44.38-121.07 124.72v70.62H86.41V288h54.58v224h100.2V288z"/></svg>
+        </a>
+      </div>
     </div>
   </div>
 </header>
 
 <section class="hero">
-  <img src="/img/capa.webp" alt="Imagem de capa Confie Caça Vazamentos">
-  <h2>Geofone sem quebrar • Limpeza de Caixa d’Água</h2>
-  <p>Localizamos vazamentos com precisão em São José do Rio Preto e região. Atendimento rápido pelo WhatsApp.</p>
-  <a href="https://wa.me/5517981113437" class="btn btn-primary">Falar no WhatsApp</a>
-</section>
-
-<section>
-  <h3>Caça Vazamentos</h3>
-  <div class="card">
-    <img src="/img/cacasite.webp" alt="Caça vazamentos">
-    
-<h4>O que é Caça Vazamentos?</h4>
-<p>O serviço de caça vazamentos com geofone é a solução moderna e inteligente para quem enfrenta contas de água altas, infiltrações ou suspeita de vazamento oculto...</p>
-<p>Usamos geofone para localizar ruídos na tubulação sem quebrar pisos ou paredes. Esse processo economiza tempo, dinheiro e evita transtornos...</p>
-<p>Principais sinais de vazamento: contas de água altas, manchas de umidade, mofo, barulhos em canos, hidrômetro girando com registros fechados...</p>
-<p>Vantagens: diagnóstico rápido, economia de água, proteção estrutural, menos custos de obra, laudo simplificado para o cliente...</p>
-<p>Atendemos residências, comércios, condomínios e indústrias. Nosso suporte inclui orientação preventiva e reparo imediato quando possível...</p>
-
+  <div class="hero-inner">
+    <div>
+      <h2>Geofone sem quebrar • Teste de pressão e laudo • WhatsApp (17) 98111-3437</h2>
+      <p class="lead">Localizamos vazamentos com precisão em residências, comércios e condomínios. Atendemos <strong>São José do Rio Preto</strong> e diversas cidades da região, com limpeza de caixa d’água e pequenos reparos.</p>
+      <div class="cta">
+        <a class="btn primary" href="https://wa.me/5517981113437">Falar no WhatsApp</a>
+        <a class="btn secondary" href="#servicos">Ver serviços</a>
+      </div>
+      <p class="lead" style="margin-top:8px">Veja nossas avaliações no <a href="https://share.google/YUwmFMYd8rQAIERG8" target="_blank" rel="noopener">Google</a>.</p>
+    </div>
+    <img src="/img/capa.webp" alt="Equipe Confie realizando diagnóstico com geofone" loading="eager" width="920" height="600">
   </div>
 </section>
 
-<section>
-  <h3>Pequenos Reparos</h3>
-  <div class="card">
-    <img src="/img/Pequenosreparos.webp" alt="Pequenos reparos">
-    
-<h4>Pequenos Reparos Hidráulicos</h4>
-<p>Pequenos reparos evitam grandes problemas. Muitas vezes um registro pingando ou um sifão mal vedado passa despercebido...</p>
-<p>Nossa equipe troca torneiras, registros, válvulas de descarga, sifões, boias, flexíveis e conexões em geral...</p>
-<p>Um reparo rápido evita desperdício de água, infiltrações maiores e prejuízos. Também melhora a qualidade de vida e reduz riscos de emergências...</p>
-<p>Solicite pelo WhatsApp {phone_display}, enviando fotos do problema. Agendamos rápido e resolvemos no local com peças de qualidade...</p>
-<p>Esse serviço também é preventivo: garante economia na conta e tranquilidade para o cliente.</p>
+<section id="servicos">
+  <div class="container">
+    <h3 class="section-title">Serviços especializados</h3>
 
+    <article class="card">
+      <div class="service-media"><img src="/img/cacasite.webp" alt="Caça vazamentos com geofone"></div>
+      
+<h2>Caça Vazamentos com Geofone (com Teste de Pressão e Laudo Técnico Integrado)</h2>
+<p><strong>O serviço de caça vazamentos</strong> é a melhor alternativa para quem desconfia de vazamento oculto e não quer quebrar piso e parede à toa. Nosso método usa <strong>geofone de alta precisão</strong> para escutar o ruído característico da fuga de água e, assim, <strong>triangular exatamente o ponto do problema</strong>. Isso reduz drasticamente o tempo de obra, o custo com materiais e o transtorno para quem mora ou trabalha no local.</p>
+<p>Como funciona na prática: primeiro pedimos que o cliente envie fotos ou um vídeo pelo <a href="https://wa.me/5517981113437">WhatsApp (17) 98111-3437</a> para entendermos a situação e adiantarmos os passos. No local, avaliamos registros, hidrômetro e possíveis fontes de consumo. Com tudo fechado, iniciamos a leitura do geofone em pontos estratégicos. O equipamento, operado por técnico experiente, diferencia ruídos naturais (vazão normal, vento, eletrodomésticos) do som típico de vazamento. Quando a intensidade e a frequência coincidem com o padrão de fuga, confirmamos com <strong>teste de pressão</strong> para garantir a assertividade do diagnóstico.</p>
+<p><strong>O laudo técnico</strong> faz parte do nosso pacote de atendimento quando necessário: documentamos o que foi encontrado, os testes realizados e as recomendações de correção. Em condomínios, síndicos e administradoras valorizam esse registro porque ele ajuda a decidir o plano de reparo, estimar prazos e dialogar com prestadores, seguradoras ou construtoras quando for o caso.</p>
+<p>Por que escolher a Confie? Porque unimos <strong>tecnologia + método + experiência</strong>. Atendemos residências, comércios, condomínios e pequenas indústrias em <strong>São José do Rio Preto</strong> e região. Nossos resultados incluem economia de água, prevenção de danos estruturais, menos retrabalho e menos poeira e barulho no imóvel. Na maioria dos atendimentos, o <strong>ponto de vazamento é indicado com margem mínima de erro</strong>, permitindo um reparo cirúrgico. Em alguns casos, executamos o conserto simples na hora; quando a obra é maior, orientamos e indicamos o melhor caminho.</p>
+<h3>Sinais de que você pode ter um vazamento oculto</h3>
+<ul>
+  <li>Conta de água aumentou sem mudança de consumo.</li>
+  <li>Hidrômetro gira mesmo com todos os registros fechados.</li>
+  <li>Manchas, bolor, umidade, rejunte escurecido e pintura “estufada”.</li>
+  <li>Barulho na tubulação, piso oco ou sensação de “oco” ao bater.</li>
+  <li>Baixa pressão repentina em torneiras e chuveiros.</li>
+</ul>
+<p>Sentiu algum desses sinais? É hora de chamar um especialista. <a href="https://wa.me/5517981113437">Chame no WhatsApp (17) 98111-3437</a> e envie fotos; na maioria dos casos, conseguimos <strong>agendar rapidamente</strong> em Rio Preto e cidades próximas. Localizar o vazamento cedo evita que a umidade avance e gere reparos caros depois.</p>
+<h3>Materiais e situações que atendemos</h3>
+<p>Trabalhamos com tubulações de PVC, PPR, cobre e galvanizado, além de <strong>colunas e prumadas</strong> em edifícios. O método também ajuda quando há suspeita de vazamento em <strong>áreas externas</strong>, como jardim, garagem, quintal e piscina. Se necessário, combinamos técnicas complementares (como estanqueidade por setores) para isolar ainda mais o trecho suspeito.</p>
+<p><em>Resumo:</em> o geofone nos dá a “escuta”; o teste de pressão confirma a perda; o laudo registra o achado e recomenda o reparo. A soma desses passos entrega velocidade, precisão e tranquilidade — é por isso que tantos clientes avaliam bem nosso trabalho no <a href="https://share.google/YUwmFMYd8rQAIERG8" target="_blank" rel="noopener">Google</a>.</p>
+
+    </article>
+
+    <article class="card">
+      <div class="service-media"><img src="/img/Pequenosreparos.webp" alt="Pequenos reparos hidráulicos"></div>
+      
+<h2>Pequenos Reparos Hidráulicos (Encanador de Confiança)</h2>
+<p><strong>Pequenos reparos</strong> resolvidos com agilidade evitam desperdício de água e dor de cabeça. Torneiras pingando, registros que não vedam, sifões que vazam, boias desreguladas e flexíveis rompidos parecem detalhes — mas somam litros e litros de água por mês e podem criar infiltrações silenciosas. Nosso time atende com <strong>rapidez</strong> e trabalha com peças de boa procedência para entregar durabilidade.</p>
+<p>O que fazemos no dia a dia: troca de <em>torneiras</em> e <em>válvulas</em>, substituição de <em>sifões</em>, regulagem de <em>boias</em>, troca de <em>flexíveis</em>, ajustes em <em>descargas</em>, vedação de <em>caixas acopladas</em>, reaperto de conexões, correção de <em>ralos</em> e limpeza básica de pontos com mau odor. Quando o cliente solicita, deixamos um <strong>relatório simples</strong> com o que foi feito e orientações de manutenção.</p>
+<p>Como agilizar seu atendimento: mande fotos do problema pelo <a href="https://wa.me/5517981113437">WhatsApp (17) 98111-3437</a>; com isso já sabemos quais peças levar e o tempo previsto. Em muitos casos, dá para resolver <strong>no mesmo dia</strong> em São José do Rio Preto e região. Nosso objetivo é ser seu “encanador de confiança”: honesto no diagnóstico, justo no preço e caprichoso na execução.</p>
+<p><strong>Por que agir logo?</strong> Uma <em>torneira pingando</em> pode desperdiçar centenas de litros por mês. Um <em>sifão mal vedado</em> pode trazer mau cheiro e atrair insetos. Uma <em>boia defeituosa</em> transborda a caixa d’água e aumenta a conta. Um <em>registro ruim</em> dificulta qualquer manutenção futura. Cuidar desses detalhes garante economia, conforto e previne emergências maiores.</p>
+<p>Trabalhamos com transparência: explicamos o que precisa ser feito, combinamos o valor antes e, se surgir algo fora do previsto, você decide como proceder. Quando necessário, indicamos profissionais complementares (marceneiro, gesseiro, azulejista). Sua experiência precisa ser simples e sem surpresa.</p>
+
+    </article>
+
+    <article class="card">
+      <div class="service-media"><img src="/img/limpeza.webp" alt="Limpeza de caixa d’água"></div>
+      
+<h2>Limpeza de Caixa d’Água (Higienização Completa)</h2>
+<p><strong>Limpar a caixa d’água</strong> é essencial para a saúde. Com o tempo, o reservatório acumula lodo, poeira, insetos e <em>biofilme</em> (camada de microrganismos). Sem higienização, a água perde qualidade e pode espalhar bactérias. Em residências, recomendamos limpeza a cada <strong>6 a 12 meses</strong>; em condomínios e comércios, a cada <strong>6 meses</strong> ou conforme norma interna.</p>
+<p>Como executamos: isolamos o reservatório, esvaziamos, realizamos <em>escovação</em> e remoção de resíduos, aplicamos <strong>desinfecção</strong> com produto na diluição correta e enxaguamos até garantir água límpida. Ao final, entregamos um <strong>comprovante de execução</strong> — útil para auditorias internas e para síndicos. Aproveitamos para checar <em>boias</em> e <em>vedações</em>, evitando transtornos futuros.</p>
+<p>Benefícios imediatos: melhora do sabor e odor da água, proteção contra contaminações, redução de entupimentos em torneiras e eletrodomésticos, e <strong>maior vida útil</strong> de toda a rede hidráulica. Para prédios, alinhamos cronograma com a administração para reduzir impacto nos moradores.</p>
+<p>Quer agendar? Envie uma mensagem no <a href="https://wa.me/5517981113437">WhatsApp (17) 98111-3437</a>. Atendemos São José do Rio Preto e diversas cidades da região com equipe treinada, EPI e cuidado com o seu imóvel.</p>
+
+    </article>
   </div>
 </section>
 
-<section>
-  <h3>Limpeza de Caixa d’Água</h3>
-  <div class="card">
-    <img src="/img/limpeza.webp" alt="Limpeza de caixa d’água">
-    
-<h4>Limpeza de Caixa d’Água</h4>
-<p>A higienização do reservatório é fundamental para garantir água limpa e segura. Com o tempo, caixas acumulam lodo, insetos e bactérias...</p>
-<p>O procedimento inclui esvaziar, escovar, remover resíduos, aplicar desinfecção e enxaguar corretamente...</p>
-<p>Residências: limpar a cada 12 meses. Condomínios e comércios: a cada 6 meses, conforme normas de saúde...</p>
-<p>Benefícios: prevenir doenças, melhorar qualidade da água, aumentar vida útil de encanamentos e eletrodomésticos...</p>
-<p>Nossa equipe fornece comprovante de execução, importante para empresas e condomínios que precisam de documentação.</p>
+<!-- SEO hidden keywords -->
+<div class="seo-hidden">
+  caça vazamentos rio preto, geofone sem quebrar rio preto, localizar vazamento mirassol, encanador monte aprazível, limpeza de caixa d’água catanduva, laudo técnico hidráulico, teste de pressão prumada, caça vazamento condomínio, reparo vazamento banheiro, conserto registro, trocar boia caixa d’água, vazamento piscina, hidrômetro girando, conta de água alta, infiltração parede, mofo azulejo, piso oco, estanqueidade rede hidráulica, manutenção preventiva hidráulica
+</div>
 
-  </div>
-</section>
-
-<section>
-  <h3>Teste de Pressão e Laudo Técnico</h3>
-  <div class="card">
-    <img src="/img/capa.webp" alt="Teste de pressão e laudo técnico">
-    
-<h4>Teste de Pressão e Laudo Técnico</h4>
-<p>O teste de pressão é realizado aplicando pressão controlada na rede hidráulica para identificar perdas e fragilidades...</p>
-<p>Esse procedimento é essencial em prédios, comércios e obras de grande porte. Detecta vazamentos em colunas, ramais e sistemas de incêndio...</p>
-<p>Emitimos laudo técnico completo com fotos, gráficos e recomendações, servindo como documento oficial para síndicos e engenheiros...</p>
-<p>Vantagens: segurança, prevenção de danos estruturais, economia de água e respaldo em negociações com seguradoras e construtoras...</p>
-<p>Atendemos rapidamente em Rio Preto e região. Solicite pelo WhatsApp {phone_display} e agende a visita.</p>
-
+<section id="cidades">
+  <div class="container">
+    <h3 class="section-title">Cidades atendidas</h3>
+    <p>Atendimento em São José do Rio Preto e região. Clique para abrir a página local:</p>
+    <div class="cities">
+      <a class="city" href="/cidades/sao-jose-do-rio-preto/">São José do Rio Preto</a><a class="city" href="/cidades/bady-bassitt/">Bady Bassitt</a><a class="city" href="/cidades/balsamo/">Bálsamo</a><a class="city" href="/cidades/buritama/">Buritama</a><a class="city" href="/cidades/catanduva/">Catanduva</a><a class="city" href="/cidades/cedral/">Cedral</a><a class="city" href="/cidades/cosmorama/">Cosmorama</a><a class="city" href="/cidades/floreal/">Floreal</a><a class="city" href="/cidades/general-salgado/">General Salgado</a><a class="city" href="/cidades/ibira/">Ibirá</a><a class="city" href="/cidades/jaci/">Jaci</a><a class="city" href="/cidades/jose-bonifacio/">José Bonifácio</a><a class="city" href="/cidades/magda/">Magda</a><a class="city" href="/cidades/mirassol/">Mirassol</a><a class="city" href="/cidades/mirassolandia/">Mirassolândia</a><a class="city" href="/cidades/monte-aprazivel/">Monte Aprazível</a><a class="city" href="/cidades/neves-paulista/">Neves Paulista</a><a class="city" href="/cidades/nhandeara/">Nhandeara</a><a class="city" href="/cidades/nipoa/">Nipoã</a><a class="city" href="/cidades/onda-verde/">Onda Verde</a><a class="city" href="/cidades/planalto/">Planalto</a><a class="city" href="/cidades/poloni/">Poloni</a><a class="city" href="/cidades/potirendaba/">Potirendaba</a><a class="city" href="/cidades/sebastianopolis-do-sul/">Sebastianópolis do Sul</a><a class="city" href="/cidades/tanabi/">Tanabi</a><a class="city" href="/cidades/uchoa/">Uchoa</a><a class="city" href="/cidades/uniao-paulista/">União Paulista</a><a class="city" href="/cidades/votuporanga/">Votuporanga</a><a class="city" href="/cidades/zacarias/">Zacarias</a>
+    </div>
   </div>
 </section>
 
 <footer>
-  <p>© 2025 Confie Caça Vazamentos • (17) 98111-3437</p>
+  <div class="foot">
+    <div><strong>Confie Caça Vazamentos</strong> • Geofone sem quebrar, teste de pressão e laudo, pequenos reparos e limpeza de caixa d’água.</div>
+    <div><strong>Telefone/WhatsApp:</strong> <a href="tel:+5517981113437" style="color:#93c5fd">(17) 98111-3437</a></div>
+    <div>
+      <a href="https://wa.me/5517981113437" style="color:#93c5fd">WhatsApp</a> •
+      <a href="https://share.google/YUwmFMYd8rQAIERG8" style="color:#93c5fd" target="_blank" rel="noopener">Google</a> •
+      <a href="https://www.instagram.com/confiecacavazamentos" style="color:#93c5fd" target="_blank" rel="noopener">Instagram</a> •
+      <a href="https://web.facebook.com/confiecacavazamentos" style="color:#93c5fd" target="_blank" rel="noopener">Facebook</a>
+    </div>
+  </div>
+  <div class="foot" style="border-top:1px solid #1f2937">
+    <small>© 2025 Confie Caça Vazamentos • CNPJ 34.991.314/0001-15</small>
+    <small>Privacidade • Termos</small>
+  </div>
 </footer>
 
 <div class="zap">
-  <a href="https://wa.me/5517981113437">WhatsApp (17) 98111-3437</a>
+  <a href="https://wa.me/5517981113437" aria-label="Abrir WhatsApp">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width="22" height="22"><path fill="#001b06" d="M380.9 97.1C339-6.1 222.2-31.3 133.6 22.6 44.9 76.5 19.7 193.3 73.6 282l-39.3 144.2L180.5 380c87.9 45.6 196.1 20.6 249.9-68.1 53.9-88.7 29-205.5-49.5-258.8z"/></svg>
+    Fale no WhatsApp
+  </a>
 </div>
 
 </body>
