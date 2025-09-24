@@ -7,90 +7,49 @@
   <meta name="description" content="Confie Caça Vazamentos: geofone sem quebrar, teste de pressão e laudo, pequenos reparos e limpeza de caixa d’água. Atendemos São José do Rio Preto e cidades da região. WhatsApp (17) 98111-3437.">
   <link rel="icon" href="/img/gota.webp" type="image/webp">
   <style>
-    body { margin:0; font-family: Arial, sans-serif; line-height:1.6; background:#fff; color:#222; }
-    a { text-decoration:none }
-    header { background:#fff; border-bottom:1px solid #e5e7eb; position:sticky; top:0; z-index:100 }
-    .topbar { max-width:1180px; margin:auto; padding:10px 16px; display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap }
-    .brand h1 { font-size:18px; margin:0; color:#0b4aa2 }
-    .tel { background:#0b4aa2; color:#fff; padding:6px 12px; border-radius:6px; font-weight:bold }
-    .icons { display:flex; gap:12px }
-    .icons a svg { width:26px; height:26px }
-    .hero { background:#f8fafc; padding:40px 16px; text-align:center }
-    .hero img { max-width:100%; height:auto; border-radius:12px }
-    .hero h2 { font-size:26px; color:#0b4aa2 }
-    .btn { display:inline-block; padding:12px 18px; border-radius:8px; font-weight:bold; margin-top:14px }
-    .btn.whats { background:#25d366; color:#000 }
+    body { margin:0; font-family: Arial, sans-serif; }
+    .topbar, footer { max-width:1180px; margin:auto; padding:10px 16px; display:flex; justify-content:space-between; align-items:center; }
+    .icons img, .social img { height:26px; }
     .google-rating { text-align:center; padding:30px 16px; background:#fff }
-    .google-rating img { max-width:260px; height:auto; display:block; margin:auto }
-    .google-rating p { margin-top:10px; font-size:16px; color:#333 }
-    footer { background:#0b1220; color:#ddd; padding:20px 16px; margin-top:30px }
-    footer .social { margin-top:12px; display:flex; gap:14px; justify-content:center }
-    footer .social a svg { width:28px; height:28px }
-    .zap { position:fixed; bottom:20px; right:20px; }
-    .zap a { background:#25d366; color:#000; font-weight:bold; padding:12px 16px; border-radius:50px; display:flex; align-items:center; gap:8px }
+    .google-rating img { max-width:260px; display:block; margin:auto }
+    .zap { position:fixed; right:16px; bottom:16px; }
   </style>
 </head>
 <body>
-
 <header>
   <div class="topbar">
-    <div class="brand"><h1>Confie Caça Vazamentos</h1></div>
-    <div class="right">
-      <a class="tel" href="tel:+5517981113437">(17) 98111-3437</a>
-      <div class="icons">
-        <a href="https://wa.me/5517981113437" target="_blank" aria-label="WhatsApp">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="#25d366" d="M380.9 97.1C339-6.1 222.2-31.3 133.6 22.6 44.9 76.5 19.7 193.3 73.6 282l-39.3 144.2L180.5 380c87.9 45.6 196.1 20.6 249.9-68.1 53.9-88.7 29-205.5-49.5-258.8z"/></svg>
-        </a>
-        <a href="https://share.google/YUwmFMYd8rQAIERG8" target="_blank" aria-label="Google">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 488 512"><path fill="#4285F4" d="M488 261.8c0-17.8-1.6-35.7-5-53H249v100h134c-6 32-24 59-51 77v64h82c48-44 74-109 74-188z"/><path fill="#34A853" d="M249 492c67 0 123-22 164-59l-82-64c-23 16-52 26-82 26-63 0-116-42-135-99H31v62c41 81 125 134 218 134z"/><path fill="#FBBC05" d="M114 296c-4-12-7-25-7-38s3-26 7-38v-62H31c-17 33-27 71-27 112s10 79 27 112l83-62z"/><path fill="#EA4335" d="M249 97c35 0 67 12 91 36l68-68C364 23 308 0 249 0 156 0 72 53 31 134l83 62c19-57 72-99 135-99z"/></svg>
-        </a>
-        <a href="https://www.instagram.com/confiecacavazamentos" target="_blank" aria-label="Instagram">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="#E1306C" d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.2 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.5 74.7-74.7 74.7z"/><circle fill="#E1306C" cx="370.5" cy="96.1" r="30"/></svg>
-        </a>
-        <a href="https://web.facebook.com/confiecacavazamentos" target="_blank" aria-label="Facebook">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path fill="#1877F2" d="M279.14 288l14.22-92.66h-88.91V127.78c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S293.3 0 262.06 0c-73.14 0-121.07 44.38-121.07 124.72v70.62H86.41V288h54.58v224h100.2V288z"/></svg>
-        </a>
-      </div>
+    <h1>Confie Caça Vazamentos</h1>
+    <div class="icons">
+      <a href="https://wa.me/5517981113437" target="_blank"><img src="img/zap.webp" alt="WhatsApp"></a>
+      <a href="https://share.google/YUwmFMYd8rQAIERG8" target="_blank"><img src="img/5estrelasbrancog.png" alt="Google"></a>
+      <a href="https://www.instagram.com/confiecacavazamentos" target="_blank"><img src="img/logotipo-insta.webp" alt="Instagram"></a>
+      <a href="https://web.facebook.com/confiecacavazamentos" target="_blank"><img src="img/logotipo-face02.webp" alt="Facebook"></a>
     </div>
   </div>
 </header>
 
 <section class="hero">
   <h2>Geofone sem quebrar • Teste de pressão e laudo</h2>
-  <p>Atendimento rápido em São José do Rio Preto e região. Fale agora mesmo pelo WhatsApp.</p>
-  <a class="btn whats" href="https://wa.me/5517981113437">Falar no WhatsApp</a>
-  <img src="/img/capa.webp" alt="Equipe Confie Caça Vazamentos" loading="eager">
+  <p>Atendimento rápido em São José do Rio Preto e região. Fale agora mesmo pelo WhatsApp (17) 98111-3437.</p>
 </section>
 
 <section class="google-rating">
-  <a href="https://share.google/YUwmFMYd8rQAIERG8" target="_blank"><img src="/img/5estrelasbrancog.png" alt="5 estrelas Google"></a>
+  <a href="https://share.google/YUwmFMYd8rQAIERG8" target="_blank"><img src="img/5estrelasbrancog.png" alt="5 estrelas Google"></a>
   <p>Somos avaliados com <strong>5 estrelas no Google</strong> por nossos clientes. Clique e confira.</p>
 </section>
 
 <footer>
-  <p>© 2025 Confie Caça Vazamentos • (17) 98111-3437</p>
   <div class="social">
-    <a href="https://wa.me/5517981113437" target="_blank" aria-label="WhatsApp">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="#25d366" d="M380.9 97.1C339-6.1 222.2-31.3 133.6 22.6 44.9 76.5 19.7 193.3 73.6 282l-39.3 144.2L180.5 380c87.9 45.6 196.1 20.6 249.9-68.1 53.9-88.7 29-205.5-49.5-258.8z"/></svg>
-    </a>
-    <a href="https://share.google/YUwmFMYd8rQAIERG8" target="_blank" aria-label="Google">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 488 512"><path fill="#4285F4" d="M488 261.8c0-17.8-1.6-35.7-5-53H249v100h134c-6 32-24 59-51 77v64h82c48-44 74-109 74-188z"/><path fill="#34A853" d="M249 492c67 0 123-22 164-59l-82-64c-23 16-52 26-82 26-63 0-116-42-135-99H31v62c41 81 125 134 218 134z"/><path fill="#FBBC05" d="M114 296c-4-12-7-25-7-38s3-26 7-38v-62H31c-17 33-27 71-27 112s10 79 27 112l83-62z"/><path fill="#EA4335" d="M249 97c35 0 67 12 91 36l68-68C364 23 308 0 249 0 156 0 72 53 31 134l83 62c19-57 72-99 135-99z"/></svg>
-    </a>
-    <a href="https://www.instagram.com/confiecacavazamentos" target="_blank" aria-label="Instagram">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="#E1306C" d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.2 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.5 74.7-74.7 74.7z"/><circle fill="#E1306C" cx="370.5" cy="96.1" r="30"/></svg>
-    </a>
-    <a href="https://web.facebook.com/confiecacavazamentos" target="_blank" aria-label="Facebook">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path fill="#1877F2" d="M279.14 288l14.22-92.66h-88.91V127.78c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S293.3 0 262.06 0c-73.14 0-121.07 44.38-121.07 124.72v70.62H86.41V288h54.58v224h100.2V288z"/></svg>
-    </a>
+    <a href="https://wa.me/5517981113437" target="_blank"><img src="img/zap.webp" alt="WhatsApp"></a>
+    <a href="https://share.google/YUwmFMYd8rQAIERG8" target="_blank"><img src="img/5estrelasbrancog.png" alt="Google"></a>
+    <a href="https://www.instagram.com/confiecacavazamentos" target="_blank"><img src="img/logotipo-insta.webp" alt="Instagram"></a>
+    <a href="https://web.facebook.com/confiecacavazamentos" target="_blank"><img src="img/logotipo-face02.webp" alt="Facebook"></a>
   </div>
+  <small>© 2025 Confie Caça Vazamentos</small>
 </footer>
 
 <div class="zap">
-  <a href="https://wa.me/5517981113437">
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width="20" height="20"><path fill="#000" d="M380.9 97.1C339-6.1 222.2-31.3 133.6 22.6 44.9 76.5 19.7 193.3 73.6 282l-39.3 144.2L180.5 380c87.9 45.6 196.1 20.6 249.9-68.1 53.9-88.7 29-205.5-49.5-258.8z"/></svg>
-    WhatsApp (17) 98111-3437
-  </a>
+  <a href="https://wa.me/5517981113437"><img src="img/zap.webp" alt="WhatsApp"> WhatsApp</a>
 </div>
-
 </body>
 </html>
