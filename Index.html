@@ -3,24 +3,27 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Confie Caça Vazamentos | Prévia</title>
+  <title>Confie Caça Vazamentos | Prévia Ajustada</title>
   <link rel="icon" href="/img/gota.webp" type="image/webp">
   <style>
     body { margin:0; font-family: 'Segoe UI', Arial, sans-serif; color:#222; }
     header {
       background:#004080; color:#fff; padding:12px 20px;
       display:flex; justify-content:space-between; align-items:center;
-      position:sticky; top:0; z-index:1000;
+      position:sticky; top:0; z-index:1000; flex-wrap:wrap;
     }
     header h1 { font-size:18px; margin:0; }
-    header a { color:#fff; font-weight:bold; text-decoration:none; }
+    header .right { display:flex; align-items:center; gap:15px; flex-wrap:wrap; }
+    header a.tel { color:#fff; font-weight:bold; text-decoration:none; }
+    header .icons a img { width:24px; height:24px; object-fit:contain; }
     .hero {
-      background:url('/img/capa.webp') center/cover no-repeat;
-      color:#fff; text-align:center; padding:80px 20px;
-      display:flex; flex-direction:column; align-items:center; justify-content:center;
+      text-align:center; padding:40px 20px;
     }
-    .hero h2 { font-size:30px; margin-bottom:15px; text-shadow:1px 1px 3px #000; }
-    .hero p { font-size:18px; margin-bottom:20px; max-width:600px; }
+    .hero img {
+      max-width:100%; height:auto; border-radius:10px;
+    }
+    .hero h2 { font-size:26px; margin:20px 0 10px; color:#004080; }
+    .hero p { font-size:18px; margin-bottom:20px; max-width:600px; margin-left:auto; margin-right:auto; }
     .btn {
       display:inline-block; padding:14px 24px; border-radius:6px; font-weight:bold; text-decoration:none;
     }
@@ -53,10 +56,19 @@
 
 <header>
   <h1>Confie Caça Vazamentos</h1>
-  <a href="tel:+5517981113437">(17) 98111-3437</a>
+  <div class="right">
+    <a href="tel:+5517981113437" class="tel">(17) 98111-3437</a>
+    <div class="icons">
+      <a href="https://wa.me/5517981113437" target="_blank"><img src="/img/logo-face02.webp" alt="WhatsApp"></a>
+      <a href="https://www.facebook.com/" target="_blank"><img src="/img/logo-face02.webp" alt="Facebook"></a>
+      <a href="https://www.instagram.com/" target="_blank"><img src="/img/logo-insta.webp" alt="Instagram"></a>
+      <a href="https://share.google/YUwmFMYd8rQAIERG8" target="_blank"><img src="/img/google5estrelasfundoazul.png" alt="Google Meu Negócio"></a>
+    </div>
+  </div>
 </header>
 
 <section class="hero">
+  <img src="/img/capa.webp" alt="Imagem de capa Confie Caça Vazamentos">
   <h2>Geofone sem quebrar • Limpeza de Caixa d’Água</h2>
   <p>Localizamos vazamentos com precisão em São José do Rio Preto e região. Atendimento rápido pelo WhatsApp.</p>
   <a href="https://wa.me/5517981113437" class="btn btn-primary">Falar no WhatsApp</a>
